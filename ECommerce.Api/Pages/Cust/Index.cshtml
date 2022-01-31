@@ -1,0 +1,202 @@
+﻿@page
+@model ECommerce.Api.Pages.Cust.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    //Layout = null;
+}
+<link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+<script type="text/javascript" href="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script type="text/javascript" src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<input type="text" id="txtCustomerId" placeholder="Customer Id" style="display:none;" />
+<input type="text" id="txtCustomerName" placeholder="Customer Name" style="margin-right:5px;" />
+<input type="text" id="txtCustomerSurname" placeholder="Customer Surname" style="margin-right:5px;" />
+<input type="text" id="txtPhoneNumber" placeholder="Phone" style="margin-right:5px;" />
+<input type="text" id="txtCustomerAdress" placeholder="Customer Address" style="margin-right:5px;" />
+<input type="email" id="email" placeholder="Email" style="margin-right:5px" />
+
+<button id="btnSave" class="btn btn-success" style="margin-right:5px;">Save</button>
+<button id="btnAddNew" class="btn btn-primary" style="margin-right:5px;">Add New</button>
+
+<br />
+<br />
+
+<table id="customerTable" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Ad
+            </th>
+            <th>
+                Soyad
+            </th>
+            <th>
+                Telefon
+            </th>
+            <th>
+                Adres
+            </th>
+            <th>
+                Email
+            </th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+</table>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#customerTable").DataTable({
+            ajax: {
+                url: "https://localhost:44306/api/Customer/GetAll",
+                "type": "GET",
+                "datatype": "json",
+                dataSrc: ""
+            },
+            "columns": [
+                { "data": "customerId" },
+                { "data": "customerName" },
+                { "data": "customerSurname" },
+                { "data": "phoneNumber" },
+                { "data": "customerAdress" },
+                { "data": "email" },
+                {
+                    "data": "CustomerId", "render": function (data, type, row, meta) {
+                        return "<button class='btn btn-primary' style='margin-right:5px; onclick=Edit(" + JSON.stringify(row) + ")'>Edit</button>" +
+                            "<button class='btn btn-danger' style='margin-right:5px; onclick=Delete(" + row.CustomerId + ")'>Delete</button>"
+                    },
+                }
+            ]
+        });
+
+        $("#btnSave").click(function () {
+            var customer = {
+                CustomerId: $.trim($("#txtCustomerId").val()) == "" ? 0 : $("#txtCustomerId").val(),
+                CustomerName: $("#txtCustomerName").val(),
+                CustomerSurname: $("#txtCustomerSurname").val(),
+                PhoneNumber: $("#txtPhoneNumber").val(),
+                CustomerAdress: $("#txtCustomerAdress").val(),
+                Email: $("#email").val(),
+            }
+            $.post(" https://localhost:44306/api/Customers ", { customer: customer })
+                .done(function (data) {
+                    Reset();
+                    ReloadGrid();
+                    alert("saved");
+                });
+        });
+        $("#btnAddNew").click(function () {
+            Reset();
+        })
+    });
+    function Edit(oCustomer) {
+        $("#txtCustomerId").val(oCustomer.CustomerId);
+        $("#txtCustomerName").val(oCustomer.CustomerName);
+        $("#txtCustomerSurname").val(oCustomer.CustomerSurname);
+        $("#txtPhoneNumber").val(oCustomer.PhoneNumber);
+        $("#txtCustomerAdress").val(oCustomer.CustomerAdress);
+        $("#email").val(oCustomer.Email);
+    }
+    function Delete(oCustomer) {
+        $.Delete("https://localhost:44306/api/Customer/DeleteCustomer/", function () {
+            alert("Deleted");
+            ReloadGrid();
+        });
+    }
+    function Reset() {
+        $("#txtCustomerId").val(0);
+        $("#txtCustomerName").val("");
+        $("#txtCustomerSurname").val("");
+        $("#txtPhoneNumber").val("");
+        $("#txtCustomerAdress").val("");
+        $("#email").val("");
+    }
+    function ReloadGrid() {
+        $("#customerTable").DataTable().clear();
+        $("#customerTable").DataTable().ajax.reload();
+
+    }
+</script>
+@*<div class="container">
+        <h2>Employees Record</h2>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Add New Employee</button><br /><br />
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Surname
+                    </th>
+                    <th>
+                        Phone
+                    </th>
+                    <th>
+                        Adress
+                    </th>
+                    <th>
+                    Email
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="myModalLabel">Add Employee</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="CustomerId">ID</label>
+                            <input type="text" class="form-control" id="CustomerId" placeholder="Id" disabled="disabled" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CustomerName">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="CustomerSurname">Surname</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" id="Age" placeholder="Age" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Adress">Adres</label>
+                            <input type="text" class="form-control" id="State" placeholder="State" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="Country" placeholder="Country" />
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Add</button>
+                    <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="~/js/Customers.js"></script>*@

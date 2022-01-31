@@ -1,0 +1,68 @@
+﻿@page
+@model ECommerce.Api.Pages.dataModel
+@{
+}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('MyApp', [])
+        app.controller('CategoryController', function ($scope, $window) {
+            $scope.Category = [
+                { CategoryName: "John Hammond", CategoryDescription: "United States" },
+                { CategoryName: "Mudassar Khan", CategoryDescription: "India" },
+                { CategoryName: "Suzanne Mathews", CategoryDescription: "France" },
+                { CategoryName: "Robert Schidner", CategoryDescription: "Russia" }
+                ];
+
+            $scope.Add = function () {
+                //Add the new item to the Array.
+                var category = {};
+                category.CategoryName = $scope.CategoryName;
+                category.CategoryDescription = $scope.CategoryDescription;
+                $scope.Category.push(category);
+
+                //Clear the TextBoxes.
+                $scope.CategoryName = "";
+                $scope.CategoryDescription = "";
+            };
+
+            $scope.Remove = function (index) {
+                //Find the record using Index from Array.
+                var name = $scope.Category[index].CategoryName;
+                if ($window.confirm("Do you want to delete: " + name)) {
+                    //Remove the item from Array using Index.
+                    $scope.Category.splice(index, 1);
+                }
+            }
+        });
+    </script>
+    <div ng-app="MyApp" ng-controller="CategoryController">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+            <tbody ng-repeat="m in Category">
+                <tr>
+                    <td>{{m.CategoryName}}</td>
+                    <td>{{m.CategoryDescription}}</td>
+                    <td><input type="button" ng-click="Remove($index)" value="Remove" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><input type="text" ng-model="CategoryName" /></td>
+                    <td><input type="text" ng-model="CategoryDescription" /></td>
+                    <td><input type="button" ng-click="Add()" value="Add" /></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

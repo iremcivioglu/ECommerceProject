@@ -1,0 +1,10 @@
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\bin\Release\netcoreapp3.1\ECommerce.Entities.deps.json
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\bin\Release\netcoreapp3.1\ECommerce.Entities.dll
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\bin\Release\netcoreapp3.1\ECommerce.Entities.pdb
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.csproj.AssemblyReference.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.AssemblyInfoInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.AssemblyInfo.cs
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.csproj.CoreCompileInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.dll
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Entities\obj\Release\netcoreapp3.1\ECommerce.Entities.pdb

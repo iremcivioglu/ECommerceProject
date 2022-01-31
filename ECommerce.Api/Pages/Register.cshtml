@@ -1,0 +1,257 @@
+﻿@page
+@model ECommerce.Api.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Title";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kayıt Sayfası</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition register-page">
+    <div class="register-box">
+        <div class="register-logo">
+            <a href="~/index2.html"><b>Kaydol</b></a>
+        </div>
+
+        <div class="card">
+            <div class="card-body register-card-body">
+                <p class="login-box-msg">Register a new membership</p>
+
+                <form id="register-form">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Adınız" name="Fullname">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" name="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Şifre" name="Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Tekrar Şifre">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                                <label for="agreeTerms">
+                                    <a href="#">Sözleşmeyi</a> kabul ediyorum.
+                                </label>
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block" id="register">Kaydol</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+
+                <div class="social-auth-links text-center">
+                    <p>- VEYA -</p>
+                    <a href="#" class="btn btn-block btn-primary">
+                        <i class="fab fa-facebook mr-2"></i>
+                        Facebook ile kaydol
+                    </a>
+                    <a href="#" class="btn btn-block btn-danger">
+                        <i class="fab fa-google-plus mr-2"></i>
+                        Google+ ile kaydol
+                    </a>
+                </div>
+
+                <a href="C:/Users/IREM/source/repos/ECommerceProject/ECommerce.Api/Pages/Login.cshtml" class="text-center">Zaten üyeliğim var.</a>
+            </div>
+            <!-- /.form-box -->
+        </div><!-- /.card -->
+    </div>
+    <!-- /.register-box -->
+    <!-- jQuery -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery-validation -->
+    <script src="~/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="~/plugins/jquery-validation/additional-methods.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    @*<script src="~/dist/js/demo.js"></script>*@
+    <script src="~/dist/js/general.js" charset="windows-1254" type="text/javascript"></script>
+
+    <script>
+        $(function () {
+            $.validator.setDefaults({
+                submitHandler: function () {
+                    alert("Kayıt işlemi başarılı!");
+                }
+            });
+            $('#register-form').validate({
+                rules: {
+                    Fullname: {
+                        required: true,
+                        //maxlength: 20,
+                    },
+                    Email: {
+                        required: true,
+                        email: true,
+                    },
+                    Password: {
+                        required: true,
+                        minlength: 5
+                    },
+                    terms: {
+                        required: true
+                    },
+                },
+                messages: {
+                   Fullname: {
+                        required: "Bu alanın girilmesi zorunludur.",
+
+                    },
+                    Email: {
+                        required: "Lütfen bir email adresi giriniz.",
+                        email: "Lütfen doğru bir mail adresi giriniz."
+                    },
+                    Password: {
+                        required: "Lütfen şifre oluşturunuz.",
+                        minlength: "Şifreniz 5 karakter uzunluğunda olmalıdır."
+                    },
+                    terms: "Lütfen kullanıcı sözleşmesini kabul ediniz."
+                },
+                errorElement: 'span',
+                errorPlacement: function (error, element) {
+                    error.addClass('invalid-feedback');
+                    element.closest('.input-group').append(error);
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).addClass('is-invalid');
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).removeClass('is-invalid');
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $("#register").click(function () {
+            debugger;
+
+            var model = {
+                UserName: $("[name='Fullname']").val(),
+                Email: $("[name='Email']").val(),
+                Password: $("[name='Password']").val(),
+            };
+            console.log(JSON.stringify(model));
+            var user = JSON.stringify(model);
+            $.ajax({
+                type: 'POST',
+                url: 'https://localhost:44306/api/login/create',
+                contentType: 'application/json;charset=utf-8',
+                dataType: 'json',
+                data: user,
+                success: function (gelenveri) {
+                    $("register").removeAttr("disabled");
+                    alert("Kayıt işlemeniz başarılı")
+                },
+                error: function (hata) {
+                    $("register").removeAttr("disabled");
+                }
+            });
+        });
+    </script>
+    @*<script>
+            $(function () {
+                $.validator.setDefaults({
+                    submitHandler: function () {
+                        alert("Kayıt işlemi başarılı!");
+                    }
+                });
+                $('#register-form').validate({
+                    rules: {
+                        Fullname: {
+                            required: true,
+                            //name: true,
+                        },
+                        //surname: {
+                        //    required: true,
+                        //    //surname: true,
+                        //},
+                        Email: {
+                            required: true,
+                            email: true,
+                        },
+                        Password: {
+                            required: true,
+                            minlength: 5
+                        },
+                        terms: {
+                            required: true,
+                        },
+                    },
+                    messages: {
+                        Fullname: {
+                            required: "Bu alanın girilmesi zorunludur.",
+                        },
+                        Email: {
+                            required: "Lütfen bir email adresi giriniz.",
+                            email: "Lütfen doğru bir mail adresi giriniz."
+                        },
+                        Password: {
+                            required: "Lütfen şifre oluşturunuz.",
+                            minlength: "Şifreniz 5 karakter uzunluğunda olmalıdır."
+                        },
+                        terms: "Lütfen hizmet sözleşmesini kabul ediniz."
+                    },
+                    errorElement: 'span',
+                    errorPlacement: function (error, element) {
+                        error.addClass('invalid-feedback');
+                        element.closest('.input-group').append(error);
+                    },
+                    highlight: function (element, errorClass, validClass) {
+                        $(element).addClass('is-invalid');
+                    },
+                    unhighlight: function (element, errorClass, validClass) {
+                        $(element).removeClass('is-invalid');
+                    }
+                });
+            });
+        </script>*@
+</body>
+</html>

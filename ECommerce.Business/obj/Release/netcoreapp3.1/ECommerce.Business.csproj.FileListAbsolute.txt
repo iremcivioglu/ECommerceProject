@@ -1,0 +1,5 @@
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Business\obj\Release\netcoreapp3.1\ECommerce.Business.csproj.AssemblyReference.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Business\obj\Release\netcoreapp3.1\ECommerce.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Business\obj\Release\netcoreapp3.1\ECommerce.Business.AssemblyInfoInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Business\obj\Release\netcoreapp3.1\ECommerce.Business.AssemblyInfo.cs
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.Business\obj\Release\netcoreapp3.1\ECommerce.Business.csproj.CoreCompileInputs.cache

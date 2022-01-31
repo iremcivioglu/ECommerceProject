@@ -1,0 +1,5 @@
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Release\netcoreapp3.1\ECommerce.DataAccess.csproj.AssemblyReference.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Release\netcoreapp3.1\ECommerce.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Release\netcoreapp3.1\ECommerce.DataAccess.AssemblyInfoInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Release\netcoreapp3.1\ECommerce.DataAccess.AssemblyInfo.cs
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Release\netcoreapp3.1\ECommerce.DataAccess.csproj.CoreCompileInputs.cache

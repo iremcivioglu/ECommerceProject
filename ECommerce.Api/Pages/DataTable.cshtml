@@ -1,0 +1,99 @@
+﻿@page
+@model ECommerce.Api.Pages.DataTableModel
+@{
+    ViewData["Title"] = "Data Table";
+    Layout = "~/Pages/Shared/_LayoutSite.cshtml";
+}
+<html>
+<body>
+    @*<div class="add_category">
+            <button type="button">Kategori Ekle</button>
+        </div>*@
+    <form action="https://localhost:44306/AddCategory">
+        <button type="submit">Kategori Ekle</button>
+    </form>
+    <form method="post" name="add_category">
+        <br>
+        Kategori Adı <input type="text" name="CategoryName" />
+        Kategori Tanımı <input type="text" name="CategoryDescription" />
+        @*<br>
+        <input type="button" name="add" value="Kategori Ekle" onclick="addCategory()" />*@
+
+        <div class="card-body py-4">
+            <table class="table align-middle table-row-dashed fs-6 gy-5" id="company_list">
+                <thead>
+                    <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ">
+                        <th class="min-w-125px">Kategori Adı</th>
+                        <th class="min-w-125px">Kategori Tanımı</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-600 fw-bold" id="output">
+                </tbody>
+            </table>
+            @*<button type="submit" id="save" name="save_data" class="btn btn-info">Save Data</button>*@
+        </div>
+    </form>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    fetch("https://localhost:44306/api/Category/GetAll").then(
+        res => {
+            res.json().then(
+                data => {
+                    console.log(data);
+                    if (data.length > 0) {
+                        var temp = "";
+                        data.forEach((itemData) => {
+                            temp += "<tr>";
+                            temp += "<td>" + itemData.categoryName + "</td>";
+                            temp += "<td>" + itemData.categoryDescription + "</td></tr>";
+                        });
+                        //$("#output").html(temp);
+                        document.getElementById('output').innerHTML = temp;
+                    }
+                }
+            )
+        }
+    )
+</script>
+@*<script type="text/javascript">
+        function addCategory() {
+            var CategoryName = document.add_category.CategoryName.value;
+            var CategoryDescription = document.add_category.CategoryDescription.value;
+
+            var tr = document.createElement('tr');
+
+            var td1 = tr.appendChild(document.createElement('td'));
+            var td2 = tr.appendChild(document.createElement('td'));
+
+            td1.innerHTML = CategoryName;
+            td2.innerHTML = CategoryDescription;
+
+            document.getElementById("output").appendChild(tr);
+        }
+    </script>*@
+<script type="text/javascript">
+    $("#save").click(function () {
+        var model = {
+            CategoryName: $("[name='CategoryName']").val(),
+            CategoryDescription: $("[name='CategoryDescription']").val(),
+        };
+        console.log(JSON.stringify(model));
+        var category = JSON.stringify(model);
+        $.ajax({
+            type: 'POST',
+            url: 'https://localhost:44306/api/category/post',
+            contentType: 'application/json;charset=utf-8',
+            dataType: 'json',
+            data: category,
+            success: function (response) {
+
+            },
+            error: function (error) {
+
+            }
+        });
+    });
+</script>

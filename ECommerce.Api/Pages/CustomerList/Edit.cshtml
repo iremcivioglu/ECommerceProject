@@ -1,0 +1,71 @@
+﻿@page
+@model EditModel
+@{
+}
+<br />
+<h2 class="text-info">Kategoriyi Düzenle</h2>
+<br />
+
+<div class="border container" style="padding: 20px">
+    <form method="post">
+        <input type="hidden" asp-for="Customers.CustomerId" />
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Customers.CustomerName"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Customers.CustomerName" class="form-control" />
+                <span asp-validation-for="Customers.CustomerName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Customers.CustomerSurname"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Customers.CustomerSurname" class="form-control" />
+                <span asp-validation-for="Customers.CustomerSurname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Customers.CustomerAdress"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Customers.CustomerAdress" class="form-control" />
+                <span asp-validation-for="Customers.CustomerAdress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Customers.PhoneNumber"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Customers.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Customers.PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-4">
+                <label asp-for="Customers.Email"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Customers.Email" class="form-control" />
+                <span asp-validation-for="Customers.Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-4">
+                <input type="submit" value="Update" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

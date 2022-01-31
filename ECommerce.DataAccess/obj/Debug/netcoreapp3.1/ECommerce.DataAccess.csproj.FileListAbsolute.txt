@@ -1,0 +1,16 @@
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.csproj.AssemblyReference.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.AssemblyInfoInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.AssemblyInfo.cs
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.DataAccess.deps.json
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.DataAccess.runtimeconfig.json
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.DataAccess.runtimeconfig.dev.json
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.DataAccess.dll
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.DataAccess.pdb
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.Entities.dll
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\bin\Debug\netcoreapp3.1\ECommerce.Entities.pdb
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.csproj.CopyComplete
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.dll
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.pdb
+C:\Users\IREM\source\repos\ECommerceProject\ECommerce.DataAccess\obj\Debug\netcoreapp3.1\ECommerce.DataAccess.genruntimeconfig.cache

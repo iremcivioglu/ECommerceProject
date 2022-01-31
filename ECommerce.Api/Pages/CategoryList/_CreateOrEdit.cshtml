@@ -1,0 +1,42 @@
+﻿@using ECommerce.Entities.Model
+@model Category
+ @{
+    ViewData["Title"] = "Home page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+    }
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>*@
+    <form id="create-form" method="post" asp-page="Categories" asp-route-id="@Model.CategoryId" asp-page-handler="CreateOrEdit" onsubmit="return jQueryModalPost(this);">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label">Kategori Adı</label>
+            <div class="col-md-9">
+                <input type="text" autocomplete="off" asp-for="CategoryName" name="CategoryName" class="form-control">
+                <span asp-validation-for="CategoryName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label">Kategori Tanımı</label>
+            <div class="col-md-9">
+                <input type="text" autocomplete="off" asp-for="CategoryDescription" name="CategoryDescription" class="form-control">
+                <span asp-validation-for="CategoryDescription" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-md-3">
+            </div>
+        </div>
+        <div class="form-group justify-content-between">
+            <button type="button" class="btn btn-secondary close-button" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary save-button">Save</button>
+        </div>
+
+    </form>
+    <script type="text/javascript" language=javascript>
+        $.validator.unobtrusive.parse(document);
+    </script>

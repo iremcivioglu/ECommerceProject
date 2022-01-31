@@ -1,0 +1,118 @@
+﻿@page
+@model CustomerList.IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<div class="container row p-0 m-0">
+    <div class="col-6">
+        <h2 class="text-info">
+            Book List
+        </h2>
+    </div>
+    <div class="col-3">
+        <a asp-page="Create" class="btn btn-info form-control text-white">
+            Create New Book
+        </a>
+    </div>
+    <div class="col-3">
+        <a asp-page="Upsert" class="btn btn-info form-control text-white">
+            Add(Upsert) New Book
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-6">
+        <div id="demoGrid_filter" class="dataTables_filter">
+            <label>
+                Search:<input type="search" id="myInputTextField" class="form-control form-control-sm" placeholder="" aria-controls="demoGrid">
+            </label>
+        </div>
+    </div>
+    <div class="col-12 border p-3 mt-3">
+            <form method="post">
+                @if (Model.Customers.Count() > 0)
+                {
+                    <table class="table table-striped border">
+                        <tr class="table-secondary">
+                            <th>
+                                <label asp-for="Customers.FirstOrDefault().CustomerName">Adı</label>
+                            </th>
+                            <th>
+                                <label asp-for="Customers.FirstOrDefault().CustomerSurname">Soyadı</label>
+                            </th>
+                            <th>
+                                <label asp-for="Customers.FirstOrDefault().CustomerAdress">Adres</label>
+                            </th>
+                            <th>
+                                <label asp-for="Customers.FirstOrDefault().PhoneNumber">Telefon</label>
+                            </th>
+                            <th>
+                                <label asp-for="Customers.FirstOrDefault().Email">Email</label>
+                            </th>
+                            <th>
+                                <label>Actions</label>
+                            </th>
+                        </tr>
+                        @foreach (var item in Model.Customers)
+                        {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(x => item.CustomerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => item.CustomerSurname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => item.CustomerAdress)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => item.PhoneNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(x => item.Email)
+                        </td>
+                        <td>
+                            <button asp-page-handler="Delete" asp-route-id="@item.CustomerId" onclick="return confirm('Are you sure you want to Delete?')" class="btn btn-danger btn-sm">Delete</button>
+                            <a asp-page="Edit" asp-route-id="@item.CustomerId" class="btn btn-success btn-sm text-white">Edit</a>
+                        </td>
+                    </tr>
+                        }
+                    </table>
+                }
+                else
+                {
+                    <p>
+                        No Books Available
+                    </p>
+                }
+            </form>
+        </div>
+</div>
+<div id="PlaceHolderHere"></div>
+<link href="~/lib/datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <div style="width:90%; margin:0 auto">
+
+        <table id="DT_load" class="table table-striped table-bordered dt-responsive nowrap" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Telefon No</th>
+                    <th>Adres</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/customerList.js"></script>
+}

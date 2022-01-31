@@ -1,0 +1,1841 @@
+﻿@page
+@model ECommerce.Api.Pages.MainPageModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="keywords" content="WordPress Template" />
+
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="https://d-themes.com/wordpress/riode/demo-6/xmlrpc.php" />
+
+    <link rel="preload" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/riode-icons/fonts/riode.ttf?5gap68" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+    <title>Demo 6 &#8211; Riode WordPress Demo Site</title>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="Demo 6 &raquo; Feed" href="https://d-themes.com/wordpress/riode/demo-6/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Demo 6 &raquo; Comments Feed" href="https://d-themes.com/wordpress/riode/demo-6/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Demo 6 &raquo; Products Feed" href="https://d-themes.com/wordpress/riode/demo-6/shop/feed/" />
+    <script>
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2" } };
+        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' media='all' />
+    <style id='wp-block-library-theme-inline-css'>
+        #start-resizable-editor-section {
+            display: none
+        }
+
+        .wp-block-audio figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-audio figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-code {
+            font-family: Menlo,Consolas,monaco,monospace;
+            color: #1e1e1e;
+            padding: .8em 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px
+        }
+
+        .wp-block-embed figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-embed figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .blocks-gallery-caption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .blocks-gallery-caption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-image figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-image figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-pullquote {
+            border-top: 4px solid;
+            border-bottom: 4px solid;
+            margin-bottom: 1.75em;
+            color: currentColor
+        }
+
+            .wp-block-pullquote__citation, .wp-block-pullquote cite, .wp-block-pullquote footer {
+                color: currentColor;
+                text-transform: uppercase;
+                font-size: .8125em;
+                font-style: normal
+            }
+
+        .wp-block-quote {
+            border-left: .25em solid;
+            margin: 0 0 1.75em;
+            padding-left: 1em
+        }
+
+            .wp-block-quote cite, .wp-block-quote footer {
+                color: currentColor;
+                font-size: .8125em;
+                position: relative;
+                font-style: normal
+            }
+
+            .wp-block-quote.has-text-align-right {
+                border-left: none;
+                border-right: .25em solid;
+                padding-left: 0;
+                padding-right: 1em
+            }
+
+            .wp-block-quote.has-text-align-center {
+                border: none;
+                padding-left: 0
+            }
+
+            .wp-block-quote.is-large, .wp-block-quote.is-style-large {
+                border: none
+            }
+
+        .wp-block-search .wp-block-search__label {
+            font-weight: 700
+        }
+
+        .wp-block-group.has-background {
+            padding: 1.25em 2.375em;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        .wp-block-separator {
+            border: none;
+            border-bottom: 2px solid;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: .4
+        }
+
+            .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+                width: 100px
+            }
+
+            .wp-block-separator.has-background:not(.is-style-dots) {
+                border-bottom: none;
+                height: 1px
+            }
+
+            .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+                height: 2px
+            }
+
+        .wp-block-table thead {
+            border-bottom: 3px solid
+        }
+
+        .wp-block-table tfoot {
+            border-top: 3px solid
+        }
+
+        .wp-block-table td, .wp-block-table th {
+            padding: .5em;
+            border: 1px solid;
+            word-break: normal
+        }
+
+        .wp-block-table figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-table figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-video figcaption {
+            color: #555;
+            font-size: 13px;
+            text-align: center
+        }
+
+        .is-dark-theme .wp-block-video figcaption {
+            color: hsla(0,0%,100%,.65)
+        }
+
+        .wp-block-template-part.has-background {
+            padding: 1.25em 2.375em;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        #end-resizable-editor-section {
+            display: none
+        }
+    </style>
+    <link rel='stylesheet' id='wc-blocks-vendors-style-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=5.7.2' media='all' />
+    <link rel='stylesheet' id='wc-blocks-style-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=5.7.2' media='all' />
+    <link rel='stylesheet' id='yith-wcan-shortcodes-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/shortcodes.css?ver=4.2.1' media='all' />
+    <style id='yith-wcan-shortcodes-inline-css'>
+        :root {
+            --yith-wcan-filters_colors_titles: #434343;
+            --yith-wcan-filters_colors_background: #FFFFFF;
+            --yith-wcan-filters_colors_accent: #A7144C;
+            --yith-wcan-filters_colors_accent_r: 167;
+            --yith-wcan-filters_colors_accent_g: 20;
+            --yith-wcan-filters_colors_accent_b: 76;
+            --yith-wcan-color_swatches_border_radius: 100%;
+            --yith-wcan-color_swatches_size: 30px;
+            --yith-wcan-labels_style_background: #FFFFFF;
+            --yith-wcan-labels_style_background_hover: #A7144C;
+            --yith-wcan-labels_style_background_active: #A7144C;
+            --yith-wcan-labels_style_text: #434343;
+            --yith-wcan-labels_style_text_hover: #FFFFFF;
+            --yith-wcan-labels_style_text_active: #FFFFFF;
+            --yith-wcan-anchors_style_text: #434343;
+            --yith-wcan-anchors_style_text_hover: #A7144C;
+            --yith-wcan-anchors_style_text_active: #A7144C;
+        }
+    </style>
+    <link rel='stylesheet' id='riode-demo-plugin-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/riode-demo-plugin/assets/style.css?ver=1.0' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2' media='all' />
+    <style id='woocommerce-inline-inline-css'>
+        .woocommerce form .form-row .required {
+            visibility: visible;
+        }
+    </style>
+    <link rel='stylesheet' id='yith-wcan-frontend-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/frontend.css?ver=4.2.1' media='all' />
+    <link rel='stylesheet' id='fontawesome-free-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/fontawesome-free/css/all.min.css?ver=5.14.0' media='all' />
+    <link rel='stylesheet' id='riode-icons-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/riode-icons/css/icons.min.css?ver=1.4.0' media='all' />
+    <link rel='stylesheet' id='owl-carousel-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/css/3rd-plugins/owl.carousel.min.css?ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='magnific-popup-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/css/3rd-plugins/magnific-popup.min.css?ver=1.0' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0' media='all' />
+    <link rel='stylesheet' id='elementor-animations-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/animate/animate.min.css?ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/elementor/css/custom-frontend.min.css?ver=1629811136' media='all' />
+    <link rel='stylesheet' id='elementor-post-31-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/elementor/css/post-31.css?ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='riode-theme-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/riode_styles/theme.min.css?ver=1.4.0' media='all' />
+    <link rel='stylesheet' id='riode-theme-shop-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/riode_styles/theme-shop.min.css?ver=1.4.0' media='all' />
+    <style id='riode-theme-shop-inline-css'>
+        /* Global CSS */
+        /* Home */
+        .toolbox.toolbox-top {
+            margin: 2.5rem 0 1.5rem;
+            align-items: center;
+        }
+
+            .toolbox.toolbox-top .toolbox-left {
+                display: none;
+            }
+
+            .toolbox.toolbox-top .toolbox-right {
+                order: 2;
+            }
+
+                .toolbox.toolbox-top .toolbox-right .btn {
+                    display: flex;
+                    padding: .5rem 1.1rem .5rem 0;
+                    margin-bottom: 0;
+                    margin-right: 0;
+                    font-size: 1.6rem;
+                    line-height: 1;
+                    letter-spacing: -.025em;
+                    text-transform: uppercase;
+                    border: 1px solid transparent;
+                    font-weight: 600;
+                    color: #444;
+                }
+
+                    .toolbox.toolbox-top .toolbox-right .btn:hover,
+                    .toolbox.toolbox-top .toolbox-right .btn:active,
+                    .toolbox.toolbox-top .toolbox-right .btn:focus {
+                        border-color: transparent;
+                        color: #ffa372;
+                        background: transparent;
+                    }
+
+        .toolbox .toolbox-right .btn i {
+            order: -1;
+            margin: 0 8px 4px 0;
+        }
+
+            .toolbox .toolbox-right .btn i:before {
+                content: "\e95f";
+            }
+
+        .toolbox .product-filters {
+            width: auto;
+        }
+
+        .nav-filter {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .nav-filters li:not(:last-child) {
+            margin-right: 2.2rem;
+        }
+
+        .nav-filters > li > a {
+            color: #444;
+        }
+
+        .nav-filters {
+            margin: .7rem 0;
+        }
+
+        .toolbox.toolbox-top .search-toggle i {
+            top: -3px;
+            color: #999;
+            font-size: 1.8rem;
+        }
+
+            .toolbox.toolbox-top .search-toggle i:after {
+                content: 'Search';
+                margin-left: 8px;
+                color: #444;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0;
+            }
+        /* Product */
+        .product-default .product-details {
+            padding: 1.7rem 0;
+        }
+
+            .product-default .product-details h3 {
+                margin-bottom: 6px;
+                color: #444;
+            }
+
+            .product-default .product-details .price {
+                margin-bottom: 6px;
+                font-weight: 400;
+            }
+
+        .product-default .star-rating {
+            margin-right: .6rem;
+        }
+
+        .btn-load {
+            background: transparent;
+            border: 1px solid #444;
+            color: #444;
+            margin-top: 0;
+            margin-bottom: 3rem;
+        }
+
+            .btn-load:hover {
+                background: #444;
+                color: #fff;
+                border-color: #fff;
+            }
+
+        .top-block {
+            padding-bottom: 2rem;
+        }
+
+        .toolbox .action-wrapper {
+            width: auto;
+        }
+
+        .toolbox .search-wrapper {
+            margin: 0 0 0 4rem;
+        }
+
+        .toolbox .product-filters {
+            margin-right: 0;
+        }
+
+        .toolbox .search-wrapper::before {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -22px;
+            transform: translateY(-50%);
+            top: 50%;
+            height: 1.9rem;
+            width: 1px;
+            background-color: #e0e0e0;
+        }
+
+        .toolbox .search-wrapper .input-wrapper {
+            right: -2rem;
+        }
+
+        .toolbox .toolbox-right {
+            margin-left: auto;
+        }
+
+        @@media (max-width: 991px) {
+            .toolbox .search-wrapper {
+                display: none;
+            }
+        }
+
+        @@media (max-width: 767px) {
+            .toolbox {
+                display: block;
+            }
+
+                .toolbox .toolbox-right {
+                    margin-bottom: 1rem;
+                }
+        }
+        /* Single Product */
+        .single-product .header {
+            border-bottom: 1px solid #eee;
+        }
+        /* Sidebar */
+        .shop-sidebar .sidebar-toggle-btn i {
+            margin-bottom: 4px;
+        }
+    </style>
+    <link rel='stylesheet' id='riode-dynamic-vars-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/riode_styles/dynamic_css_vars.css?ver=1.4.0' media='all' />
+    <link rel='stylesheet' id='riode-google-fonts-css' href='//fonts.googleapis.com/css?family=Jost%3A300%2C400%2C500%2C600%2C700%2C900%7CPoppins%3A300%2C400%2C500%2C600%2C700&#038;ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='riode-skeleton-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/inc/add-on/skeleton/skeleton.min.css?ver=5.8.2' media='all' />
+    <link rel='stylesheet' id='riode-style-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/style.css?ver=1.4.0' media='all' />
+    <style id='riode-style-inline-css'>
+        .elementor-element-21acdda .owl-nav .owl-prev {
+            left: 5%;
+        }
+
+        .elementor-element-21acdda .owl-nav .owl-next {
+            right: 5%;
+        }
+
+        .elementor-element-21acdda .owl-nav-top .owl-nav {
+            right: 5%;
+        }
+
+        .elementor-1517 .elementor-element.elementor-element-21acdda .owl-nav button {
+            font-size: 45px;
+        }
+
+        .elementor-element-21acdda .owl-carousel .owl-nav button {
+            color: #989898;
+        }
+
+            .elementor-element-21acdda .owl-carousel .owl-nav button.disabled {
+                color: #989898;
+            }
+
+        .elementor-1517 .elementor-element.elementor-element-e073994 {
+            background-color: #F5F5F5;
+        }
+
+        .elementor-element-e073994 .elementor-repeater-item-heading {
+            margin: 8px 0px 10px 0px;
+        }
+
+            .elementor-element-e073994 .elementor-repeater-item-heading.text, .elementor-element-e073994 .elementor-repeater-item-heading .text {
+                color: #999999;
+                font-size: 2em;
+                font-weight: 900;
+                line-height: 1em;
+                letter-spacing: 0px;
+            }
+
+        .elementor-element-e073994 .elementor-repeater-item-text {
+            margin: 0px 0px 39px 0px;
+        }
+
+            .elementor-element-e073994 .elementor-repeater-item-text.text, .elementor-element-e073994 .elementor-repeater-item-text .text {
+                color: #333333;
+                font-size: 4em;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: -1px;
+            }
+
+        .elementor-element-e073994 .btn-icon-left:not(.btn-reveal-left) i {
+            margin-right: 9px;
+        }
+
+        .elementor-element-e073994 .btn-icon-right:not(.btn-reveal-right) i {
+            margin-left: 9px;
+        }
+
+        .elementor-element-e073994 .btn-reveal-left:hover i, .elementor-element-e073994 .btn-reveal-left:active i, .elementor-element-e073994 .btn-reveal-left:focus i {
+            margin-right: 9px;
+        }
+
+        .elementor-element-e073994 .btn-reveal-right:hover i, .elementor-element-e073994 .btn-reveal-right:active i, .elementor-element-e073994 .btn-reveal-right:focus i {
+            margin-left: 9px;
+        }
+
+        .elementor-element-e073994 .btn i {
+            font-size: 19px;
+        }
+
+        .elementor-element-e073994 .banner, .elementor-element-e073994 img {
+            max-height: 65rem;
+            overflow: hidden;
+        }
+
+        .elementor-element-e073994 .banner {
+            min-height: 65rem;
+        }
+
+            .elementor-element-e073994 .banner .banner-content {
+                left: 3%;
+            }
+
+        .elementor-1517 .elementor-element.elementor-element-4c26c75 {
+            background-color: #5A5957;
+        }
+
+        .elementor-element-4c26c75 .elementor-repeater-item-heading {
+            margin: 8px 0px 7px 2px;
+        }
+
+            .elementor-element-4c26c75 .elementor-repeater-item-heading.text, .elementor-element-4c26c75 .elementor-repeater-item-heading .text {
+                color: #FFA372;
+                font-size: 2em;
+                font-weight: 900;
+                line-height: 1em;
+                letter-spacing: 0px;
+            }
+
+        .elementor-element-4c26c75 .elementor-repeater-item-text {
+            margin: 0px 0px 48px 0px;
+        }
+
+            .elementor-element-4c26c75 .elementor-repeater-item-text.text, .elementor-element-4c26c75 .elementor-repeater-item-text .text {
+                font-size: 4em;
+                font-weight: 700;
+                line-height: 46px;
+                letter-spacing: -1px;
+            }
+
+        .elementor-element-4c26c75 .btn-icon-left:not(.btn-reveal-left) i {
+            margin-right: 7px;
+        }
+
+        .elementor-element-4c26c75 .btn-icon-right:not(.btn-reveal-right) i {
+            margin-left: 7px;
+        }
+
+        .elementor-element-4c26c75 .btn-reveal-left:hover i, .elementor-element-4c26c75 .btn-reveal-left:active i, .elementor-element-4c26c75 .btn-reveal-left:focus i {
+            margin-right: 7px;
+        }
+
+        .elementor-element-4c26c75 .btn-reveal-right:hover i, .elementor-element-4c26c75 .btn-reveal-right:active i, .elementor-element-4c26c75 .btn-reveal-right:focus i {
+            margin-left: 7px;
+        }
+
+        .elementor-element-4c26c75 .btn i {
+            font-size: 19px;
+        }
+
+        .elementor-element-4c26c75 .elementor-repeater-item-button {
+            margin: 0px 0px 0px 3px;
+        }
+
+        .elementor-element-4c26c75 .banner {
+            min-height: 65rem;
+        }
+
+            .elementor-element-4c26c75 .banner .banner-content {
+                left: auto;
+                right: 3.3%;
+            }
+
+        @@media(max-width:991px) {
+            .elementor-element-21acdda .owl-nav .owl-prev {
+                left: 10px;
+            }
+
+            .elementor-element-21acdda .owl-nav .owl-next {
+                right: 10px;
+            }
+
+            .elementor-element-21acdda .owl-nav-top .owl-nav {
+                right: 10px;
+            }
+        }
+
+        @@media(max-width:767px) {
+            .elementor-element-e073994 .banner {
+                min-height: 50rem;
+            }
+
+                .elementor-element-e073994 .banner .banner-content {
+                    left: 0px;
+                }
+
+            .elementor-element-4c26c75 .banner {
+                min-height: 50rem;
+            }
+        }
+
+        .main {
+            padding-top: 0
+        }
+
+        .custom-btn-style i {
+            margin-bottom: 4px
+        }
+
+        .w-442 {
+            max-width: 442px
+        }
+
+        .w-393 {
+            max-width: 393px
+        }
+
+        .top-slide1 .banner-content .custom-single-image {
+            position: absolute;
+            right: -208%;
+            top: 70%;
+            transform: translateY(-50%);
+            z-index: -1
+        }
+
+        .top-slide2 .banner-content .custom-single-image {
+            position: absolute;
+            left: -120%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1
+        }
+
+        .intro-slides .owl-item {
+            overflow: hidden
+        }
+
+        @@media ( max-width:767px ) {
+            .top-slide1 .banner-content .custom-single-image {
+                right: -100%
+            }
+
+            .top-slide2 .banner-content .custom-single-image {
+                left: 30%
+            }
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-ca5fd54 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+            align-content: center;
+            align-items: center;
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-ca5fd54 {
+            padding: 28px 0px 26px 0px;
+        }
+
+            .elementor-1983 .elementor-element.elementor-element-ca5fd54.fixed {
+                padding: 15px 0px 15px 0px;
+                background-color: #FFFFFF;
+            }
+
+        .elementor-element-b2eb8d6 .mobile-menu-toggle {
+            color: #FFA372;
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-15f8d2e.elementor-column > .elementor-widget-wrap {
+            justify-content: center;
+        }
+
+        .elementor-element-88f2085 .logo {
+            width: 153px;
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-4b6db1e.elementor-column > .elementor-widget-wrap {
+            justify-content: flex-end;
+        }
+
+        .elementor-element-d651fb0 .account .delimiter {
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-d651fb0 > .elementor-widget-container {
+            margin: 0px 5px 0px 0px;
+        }
+
+        .elementor-element-87fc05b .cart-toggle {
+            color: #444444;
+        }
+
+        .elementor-element-87fc05b .cart-name-delimiter {
+            margin: 0 0px;
+        }
+
+        .elementor-element-87fc05b .cart-price {
+            font-size: 14px;
+        }
+
+        .elementor-element-87fc05b .cart-dropdown .cart-toggle .cart-price {
+            margin: 0px 2px 0px 1px;
+        }
+
+        .elementor-1983 .elementor-element.elementor-element-87fc05b > .elementor-widget-container {
+            margin: 0px -2px 0px 0px;
+        }
+
+        .custom-header .cart-dropdown .cart-count-wrap, .custom-header .cart-dropdown:hover .cart-name-delimiter {
+            color: #ffa372
+        }
+
+        .custom-header .cart-dropdown .cart-name-delimiter {
+            color: #ccc;
+            transition: color .3s
+        }
+
+        .custom-header .cart-count {
+            font-size: 14px
+        }
+
+        .custom-header .main-menu > ul.menu > li > a:before {
+            bottom: 11px
+        }
+
+        .custom-header .main-menu > ul.menu > li > a:after {
+            content: none
+        }
+
+        .custom-header .cart-dropdown .cart-toggle > span.cart-count-wrap {
+            display: block
+        }
+    </style>
+    <link rel='stylesheet' id='elementor-post-2528-css' href='https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/elementor/css/post-2528.css?ver=5.8.2' media='all' />
+    <style id='elementor-post-2528-inline-css'>
+        .custom-footer .menu {
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+            .custom-footer .menu li:last-child {
+                margin-bottom: 1.5rem
+            }
+
+        .custom-footer .custom-footer-bottom.elementor-section > .elementor-container {
+            max-width: 1180px
+        }
+
+        @@media ( min-width:576px ) {
+            .custom-footer .menu li:last-child {
+                margin-right: 0
+            }
+        }
+    </style>
+    <script type="text/template" id="tmpl-variation-template">
+        <div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+        <div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+        <div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+    </script>
+    <script type="text/template" id="tmpl-unavailable-variation-template">
+        <p>Sorry, this product is unavailable. Please choose a different combination.</p>
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/riode-demo-plugin/assets/main.js?ver=1.0' id='riode-demo-plugin-js'></script>
+    <link rel="https://api.w.org/" href="https://d-themes.com/wordpress/riode/demo-6/wp-json/" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://d-themes.com/wordpress/riode/demo-6/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://d-themes.com/wordpress/riode/demo-6/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.8.2" />
+    <meta name="generator" content="WooCommerce 5.7.1" />
+    <meta name="application-name" content="Riode - Multi-Purpose eCommerce WordPress Theme">
+    <meta name="author" content="D-THEMES">
+    <meta name="description" content="Riode Multi-Purpose eCommerce Responsive WordPress Theme.">
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <link rel="icon" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/cropped-favicon-270x270.png" />
+    <style id="kirki-inline-styles"></style>
+</head>
+<body class="home archive post-type-archive post-type-archive-product wp-custom-logo wp-embed-responsive theme-riode woocommerce-shop woocommerce woocommerce-page woocommerce-no-js yith-wcan-free product-archive-layout center-with-sidebar riode-disable-mobile-animation elementor-default elementor-kit-31 riode-demo">
+    <div class="page-wrapper">
+
+        <header class="header custom-header header-1983" id="header">
+            <style>
+                .elementor-1983 .elementor-element.elementor-element-ca5fd54 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+                    align-content: center;
+                    align-items: center;
+                }
+
+                .elementor-1983 .elementor-element.elementor-element-ca5fd54 {
+                    padding: 28px 0px 26px 0px;
+                }
+
+                    .elementor-1983 .elementor-element.elementor-element-ca5fd54.fixed {
+                        padding: 15px 0px 15px 0px;
+                        background-color: #FFFFFF;
+                    }
+
+                .elementor-element-b2eb8d6 .mobile-menu-toggle {
+                    color: #FFA372;
+                }
+
+                .elementor-1983 .elementor-element.elementor-element-15f8d2e.elementor-column > .elementor-widget-wrap {
+                    justify-content: center;
+                }
+
+                .elementor-element-88f2085 .logo {
+                    width: 153px;
+                }
+
+                .elementor-1983 .elementor-element.elementor-element-4b6db1e.elementor-column > .elementor-widget-wrap {
+                    justify-content: flex-end;
+                }
+
+                .elementor-element-d651fb0 .account .delimiter {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                .elementor-1983 .elementor-element.elementor-element-d651fb0 > .elementor-widget-container {
+                    margin: 0px 5px 0px 0px;
+                }
+
+                .elementor-element-87fc05b .cart-toggle {
+                    color: #444444;
+                }
+
+                .elementor-element-87fc05b .cart-name-delimiter {
+                    margin: 0 0px;
+                }
+
+                .elementor-element-87fc05b .cart-price {
+                    font-size: 14px;
+                }
+
+                .elementor-element-87fc05b .cart-dropdown .cart-toggle .cart-price {
+                    margin: 0px 2px 0px 1px;
+                }
+
+                .elementor-1983 .elementor-element.elementor-element-87fc05b > .elementor-widget-container {
+                    margin: 0px -2px 0px 0px;
+                }
+            </style>
+            <style id="block_1983_css">
+                .custom-header .cart-dropdown .cart-count-wrap, .custom-header .cart-dropdown:hover .cart-name-delimiter {
+                    color: #ffa372
+                }
+
+                .custom-header .cart-dropdown .cart-name-delimiter {
+                    color: #ccc;
+                    transition: color .3s
+                }
+
+                .custom-header .cart-count {
+                    font-size: 14px
+                }
+
+                .custom-header .main-menu > ul.menu > li > a:before {
+                    bottom: 11px
+                }
+
+                .custom-header .main-menu > ul.menu > li > a:after {
+                    content: none
+                }
+
+                .custom-header .cart-dropdown .cart-toggle > span.cart-count-wrap {
+                    display: block
+                }
+            </style><div class="riode-block elementor elementor-1983" data-block-id="1983">
+                <div class=" sticky-content fix-top elementor-section elementor-top-section elementor-element elementor-element-ca5fd54 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-sticky-options="{&quot;defaults&quot;:{&quot;minWidth&quot;:992,&quot;maxWidth&quot;:20000},&quot;devices&quot;:{&quot;xl&quot;:true,&quot;lg&quot;:true,&quot;md&quot;:false,&quot;sm&quot;:false,&quot;xs&quot;:false}}" data-id="ca5fd54" data-element_type="section">
+
+                    <div class="elementor-container elementor-column-gap-no">
+
+
+                        <div class=" elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ad1cf8f flex-md-1 w-auto" data-id="ad1cf8f" data-element_type="column">
+
+
+
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class=" elementor-element elementor-element-b2eb8d6 mb-0 elementor-widget elementor-widget-riode_header_mmenu_toggle" data-id="b2eb8d6" data-element_type="widget" data-widget_type="riode_header_mmenu_toggle.default">
+                                    <div class="elementor-widget-container">
+                                        <a href="#" class="mobile-menu-toggle d-show-mob"><i class="d-icon-bars2"></i></a>
+                                    </div>
+                                </div>
+                                <div class=" elementor-element elementor-element-08d512c elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-riode_widget_menu" data-id="08d512c" data-element_type="widget" data-widget_type="riode_widget_menu.default">
+                                    <div class="elementor-widget-container">
+                                        <nav class=" skin1 main-menu">
+                                            <ul id="menu-main-menu" class="menu  horizontal-menu menu-active-underline lazy-menu" style="">
+                                                <li id="menu-item-2867" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item current_page_item menu-item-2867"><a href="https://d-themes.com/wordpress/riode/demo-6/">Home</a></li>
+                                                <li id="menu-item-2796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2796">
+                                                    <a href="https://d-themes.com/wordpress/riode/elements/">Elements</a><ul class="megamenu full-megamenu skel-megamenu">
+                                                        <li id="menu-item-2797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2797">
+                                                        <li id="menu-item-2810" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2810">
+                                                        <li id="menu-item-2823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2823">
+                                                        <li id="menu-item-2836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2836">
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-2789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2789">
+                                                    <a href="#" class="nolink">Pages</a>
+                                                    <ul class="submenu skel-menu">
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-2849" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2849">
+                                                    <a href="https://d-themes.com/wordpress/riode/demo-6/blog/">Blog</a>
+                                                    <ul class="submenu skel-menu">
+                                                    </ul>
+                                                </li>
+                                                <li id="menu-item-2866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2866"><a href="https://d-themes.com/wordpress/riode/elements/about-us">About Us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class=" elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-15f8d2e flex-none w-auto" data-id="15f8d2e" data-element_type="column">
+
+
+
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class=" elementor-element elementor-element-88f2085 elementor-widget elementor-widget-riode_widget_logo" data-id="88f2085" data-element_type="widget" data-widget_type="riode_widget_logo.default">
+                                    <div class="elementor-widget-container">
+
+                                        <a href="https://d-themes.com/wordpress/riode/demo-6/" class="logo" title="Demo 6 - Riode WordPress Demo Site">
+                                            <img width="306" height="88" src="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/logo.png" class="attachment-full size-full" alt="Demo 6" srcset="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/logo.png 306w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/logo-300x86.png 300w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2021/01/logo-150x43.png 150w" sizes="(max-width: 306px) 100vw, 306px" />
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class=" elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4b6db1e flex-1 w-auto" data-id="4b6db1e" data-element_type="column">
+
+
+
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class=" elementor-element elementor-element-d651fb0 elementor-hidden-tablet elementor-hidden-phone mb-0 elementor-widget elementor-widget-riode_header_account" data-id="d651fb0" data-element_type="widget" data-widget_type="riode_header_account.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="account"><a class="login inline-type" href="https://d-themes.com/wordpress/riode/demo-6/my-account/"><span>Login</span></a><span class="delimiter">or</span><a class="register inline-type" href="https://d-themes.com/wordpress/riode/demo-6/my-account/"><span>Register</span></a></div>
+                                    </div>
+                                </div>
+                                <div class=" elementor-element elementor-element-87fc05b elementor-widget elementor-widget-riode_header_cart" data-id="87fc05b" data-element_type="widget" data-widget_type="riode_header_cart.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="dropdown  mini-basket-dropdown cart-dropdown label-type inline-type cart-offcanvas offcanvas-type">
+                                            <a class="cart-toggle" href="https://d-themes.com/wordpress/riode/demo-6/cart/">
+                                                <span class="cart-label inline-type">
+                                                    <span class="cart-name">My cart</span>
+                                                    <span class="cart-name-delimiter">/</span>
+
+                                                    <span class="cart-price">$0.00</span>
+                                                </span>
+                                                <span class="cart-count-wrap">
+                                                    (<span class="cart-count">0</span> Items)
+                                                </span>
+                                            </a>
+                                            <div class="offcanvas-overlay cart-overlay"></div>
+                                            <div class="cart-popup widget_shopping_cart dropdown-box">
+                                                <div class="popup-header"><h3>Shopping Cart</h3><a class="btn btn-link btn-icon-after btn-close" href="#">close<i class="d-icon-arrow-right"></i></a></div>			<div class="widget_shopping_cart_content">
+                                                    <div class="cart-loading"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main" class="main">
+            <div class="top-block">
+                <style>
+                    .elementor-element-21acdda .owl-nav .owl-prev {
+                        left: 5%;
+                    }
+
+                    .elementor-element-21acdda .owl-nav .owl-next {
+                        right: 5%;
+                    }
+
+                    .elementor-element-21acdda .owl-nav-top .owl-nav {
+                        right: 5%;
+                    }
+
+                    .elementor-1517 .elementor-element.elementor-element-21acdda .owl-nav button {
+                        font-size: 45px;
+                    }
+
+                    .elementor-element-21acdda .owl-carousel .owl-nav button {
+                        color: #989898;
+                    }
+
+                        .elementor-element-21acdda .owl-carousel .owl-nav button.disabled {
+                            color: #989898;
+                        }
+
+                    .elementor-1517 .elementor-element.elementor-element-e073994 {
+                        background-color: #F5F5F5;
+                    }
+
+                    .elementor-element-e073994 .elementor-repeater-item-heading {
+                        margin: 8px 0px 10px 0px;
+                    }
+
+                        .elementor-element-e073994 .elementor-repeater-item-heading.text, .elementor-element-e073994 .elementor-repeater-item-heading .text {
+                            color: #999999;
+                            font-size: 2em;
+                            font-weight: 900;
+                            line-height: 1em;
+                            letter-spacing: 0px;
+                        }
+
+                    .elementor-element-e073994 .elementor-repeater-item-text {
+                        margin: 0px 0px 39px 0px;
+                    }
+
+                        .elementor-element-e073994 .elementor-repeater-item-text.text, .elementor-element-e073994 .elementor-repeater-item-text .text {
+                            color: #333333;
+                            font-size: 4em;
+                            font-weight: 700;
+                            line-height: 46px;
+                            letter-spacing: -1px;
+                        }
+
+                    .elementor-element-e073994 .btn-icon-left:not(.btn-reveal-left) i {
+                        margin-right: 9px;
+                    }
+
+                    .elementor-element-e073994 .btn-icon-right:not(.btn-reveal-right) i {
+                        margin-left: 9px;
+                    }
+
+                    .elementor-element-e073994 .btn-reveal-left:hover i, .elementor-element-e073994 .btn-reveal-left:active i, .elementor-element-e073994 .btn-reveal-left:focus i {
+                        margin-right: 9px;
+                    }
+
+                    .elementor-element-e073994 .btn-reveal-right:hover i, .elementor-element-e073994 .btn-reveal-right:active i, .elementor-element-e073994 .btn-reveal-right:focus i {
+                        margin-left: 9px;
+                    }
+
+                    .elementor-element-e073994 .btn i {
+                        font-size: 19px;
+                    }
+
+                    .elementor-element-e073994 .banner, .elementor-element-e073994 img {
+                        max-height: 65rem;
+                        overflow: hidden;
+                    }
+
+                    .elementor-element-e073994 .banner {
+                        min-height: 65rem;
+                    }
+
+                        .elementor-element-e073994 .banner .banner-content {
+                            left: 3%;
+                        }
+
+                    .elementor-1517 .elementor-element.elementor-element-4c26c75 {
+                        background-color: #5A5957;
+                    }
+
+                    .elementor-element-4c26c75 .elementor-repeater-item-heading {
+                        margin: 8px 0px 7px 2px;
+                    }
+
+                        .elementor-element-4c26c75 .elementor-repeater-item-heading.text, .elementor-element-4c26c75 .elementor-repeater-item-heading .text {
+                            color: #FFA372;
+                            font-size: 2em;
+                            font-weight: 900;
+                            line-height: 1em;
+                            letter-spacing: 0px;
+                        }
+
+                    .elementor-element-4c26c75 .elementor-repeater-item-text {
+                        margin: 0px 0px 48px 0px;
+                    }
+
+                        .elementor-element-4c26c75 .elementor-repeater-item-text.text, .elementor-element-4c26c75 .elementor-repeater-item-text .text {
+                            font-size: 4em;
+                            font-weight: 700;
+                            line-height: 46px;
+                            letter-spacing: -1px;
+                        }
+
+                    .elementor-element-4c26c75 .btn-icon-left:not(.btn-reveal-left) i {
+                        margin-right: 7px;
+                    }
+
+                    .elementor-element-4c26c75 .btn-icon-right:not(.btn-reveal-right) i {
+                        margin-left: 7px;
+                    }
+
+                    .elementor-element-4c26c75 .btn-reveal-left:hover i, .elementor-element-4c26c75 .btn-reveal-left:active i, .elementor-element-4c26c75 .btn-reveal-left:focus i {
+                        margin-right: 7px;
+                    }
+
+                    .elementor-element-4c26c75 .btn-reveal-right:hover i, .elementor-element-4c26c75 .btn-reveal-right:active i, .elementor-element-4c26c75 .btn-reveal-right:focus i {
+                        margin-left: 7px;
+                    }
+
+                    .elementor-element-4c26c75 .btn i {
+                        font-size: 19px;
+                    }
+
+                    .elementor-element-4c26c75 .elementor-repeater-item-button {
+                        margin: 0px 0px 0px 3px;
+                    }
+
+                    .elementor-element-4c26c75 .banner {
+                        min-height: 65rem;
+                    }
+
+                        .elementor-element-4c26c75 .banner .banner-content {
+                            left: auto;
+                            right: 3.3%;
+                        }
+
+                    @@media(max-width:991px) {
+                        .elementor-element-21acdda .owl-nav .owl-prev {
+                            left: 10px;
+                        }
+
+                        .elementor-element-21acdda .owl-nav .owl-next {
+                            right: 10px;
+                        }
+
+                        .elementor-element-21acdda .owl-nav-top .owl-nav {
+                            right: 10px;
+                        }
+                    }
+
+                    @@media(max-width:767px) {
+                        .elementor-element-e073994 .banner {
+                            min-height: 50rem;
+                        }
+
+                            .elementor-element-e073994 .banner .banner-content {
+                                left: 0px;
+                            }
+
+                        .elementor-element-4c26c75 .banner {
+                            min-height: 50rem;
+                        }
+                    }
+                </style>
+                <style id="block_1517_css">
+                    .main {
+                        padding-top: 0
+                    }
+
+                    .custom-btn-style i {
+                        margin-bottom: 4px
+                    }
+
+                    .w-442 {
+                        max-width: 442px
+                    }
+
+                    .w-393 {
+                        max-width: 393px
+                    }
+
+                    .top-slide1 .banner-content .custom-single-image {
+                        position: absolute;
+                        right: -208%;
+                        top: 70%;
+                        transform: translateY(-50%);
+                        z-index: -1
+                    }
+
+                    .top-slide2 .banner-content .custom-single-image {
+                        position: absolute;
+                        left: -120%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: -1
+                    }
+
+                    .intro-slides .owl-item {
+                        overflow: hidden
+                    }
+
+                    @@media ( max-width:767px ) {
+                        .top-slide1 .banner-content .custom-single-image {
+                            right: -100%
+                        }
+
+                        .top-slide2 .banner-content .custom-single-image {
+                            left: 30%
+                        }
+                    }
+                </style><div class="riode-block elementor elementor-1517" data-block-id="1517">
+                    <section class=" elementor-section elementor-top-section elementor-element elementor-element-5ba6ef7 elementor-section-full_width custom-nav-style elementor-section-height-default elementor-section-height-default" data-id="5ba6ef7" data-element_type="section">
+
+                        <div class="elementor-container elementor-column-gap-no">
+
+
+                            <div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-21acdda intro-slides" data-id="21acdda" data-element_type="column">
+
+
+
+                                <div class=" row cols-lg-1 cols-md-1 cols-sm-1 cols-1  gutter-no owl-carousel owl-theme owl-nav-simple2 owl-dot-white owl-dot-inner elementor-widget-wrap elementor-element-populated" data-plugin="owl" data-owl-options="{&quot;animateIn&quot;:&quot;fadeIn&quot;,&quot;animateOut&quot;:&quot;fadeOut&quot;,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;responsive&quot;:{&quot;992&quot;:{&quot;items&quot;:1,&quot;nav&quot;:true,&quot;dots&quot;:false},&quot;768&quot;:{&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:true},&quot;576&quot;:{&quot;items&quot;:1},&quot;0&quot;:{&quot;items&quot;:1}}}">
+                                    <div class=" elementor-element elementor-element-e073994 top-slide1 overflow-hidden elementor-widget elementor-widget-riode_widget_banner background-none" data-id="e073994" data-element_type="widget" data-settings="{&quot;banner_background_background&quot;:&quot;classic&quot;}" data-widget_type="riode_widget_banner.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="el-banner banner simple-left el-banner-fixed banner-fixed">
+                                                <div class="container">
+                                                    <div class="banner-content ">
+                                                        <h4 class="banner-item elementor-repeater-item-heading appear-animate animated- item-block text" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":200}'>BEST SELLER</h4><h2 class="banner-item elementor-repeater-item-text w-393 appear-animate animated- item-block text" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":400}'>
+                                                            Power bank with built
+                                                            in wireless charge
+                                                        </h2><a class="banner-item elementor-repeater-item-button custom-btn-style appear-animate animated- item-inline  btn btn-link btn-underline  btn-primary btn-icon-right" href="https://d-themes.com/wordpress/riode/demo-6/" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":600}'>shop electronics<i class="d-icon-arrow-right"></i></a><div class="banner-item elementor-repeater-item-c40b136 custom-single-image appear-animate animated- item-block" data-settings='{"_animation":"fadeIn","_animation_delay":800}'><div class="floating-wrapper layer-wrapper elementor-repeater-item-c40b136-wrapper" data-plugin='floating' data-options='{"invertX":false,"invertY":false}' data-floating-depth='0.5'><div class="layer"><div class=" image"><img width="778" height="394" src="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1.png" class="attachment-full size-full" alt="Banner Image" srcset="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1.png 778w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1-300x152.png 300w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1-768x389.png 768w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1-150x76.png 150w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/charger-1-600x304.png 600w" sizes="(max-width: 778px) 100vw, 778px" /></div></div></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" elementor-element elementor-element-4c26c75 overfow-hidden top-slide2 elementor-widget elementor-widget-riode_widget_banner background-none" data-id="4c26c75" data-element_type="widget" data-settings="{&quot;banner_background_background&quot;:&quot;classic&quot;}" data-widget_type="riode_widget_banner.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="el-banner banner simple-left el-banner-fixed banner-fixed">
+                                                <div class="container">
+                                                    <div class="banner-content ">
+                                                        <h4 class="banner-item elementor-repeater-item-heading appear-animate animated- item-block text" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":200}'>NEW DESIGN</h4><h2 class="banner-item elementor-repeater-item-text w-442 appear-animate animated- item-block text" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":400}'>
+                                                            Stunning original design
+                                                            new wooden clock
+                                                        </h2><a class="banner-item elementor-repeater-item-button custom-btn-style appear-animate animated- item-inline  btn btn-link btn-underline  btn-white btn-icon-right" href="https://d-themes.com/wordpress/riode/demo-6/" data-settings='{"_animation":"fadeInLeftShorter","_animation_delay":600}'>shop essentials<i class="d-icon-arrow-right"></i></a><div class="banner-item elementor-repeater-item-4fd297e custom-single-image appear-animate animated- item-block" data-settings='{"_animation":"fadeIn","_animation_delay":800}'><div class="floating-wrapper layer-wrapper elementor-repeater-item-4fd297e-wrapper" data-plugin='floating' data-options='{"invertX":true,"invertY":true}' data-floating-depth='0.5'><div class="layer"><div class=" image"><img width="391" height="401" src="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/2.png" class="attachment-full size-full" alt="Single Image" srcset="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/2.png 391w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/2-293x300.png 293w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/2-150x154.png 150w, https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/2-300x308.png 300w" sizes="(max-width: 391px) 100vw, 391px" /></div></div></div></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div><div class="container">
+                <div class="main-content">
+                    <header class="woocommerce-products-header d-none">
+                        <h2 class="woocommerce-products-header__title page-title">Riode Shop</h2>
+
+                    </header>
+
+                    <div class="woocommerce-notices-wrapper"></div>
+                    <div class="sticky-toolbox sticky-content fix-top toolbox toolbox-top">
+
+
+                        <div class="toolbox-left">
+
+
+
+                        </div>
+                        <div class="toolbox-right">
+
+                            <a href="#" class="toolbox-item toolbox-toggle right-sidebar-toggle btn btn-sm btn-outline btn-primary">Filter<i class="d-icon-arrow-left"></i></a>
+
+                        </div>
+                        <div class="action-wrapper">
+
+                            <ul class="nav-filters product-filters"><li><a href="https://d-themes.com/wordpress/riode/demo-6/" class="nav-filter active" data-filter="*">All</a></li><li><a href="https://d-themes.com/wordpress/riode/demo-6/product-category/accessories/" class="nav-filter" data-cat="80" data-filter="accessories">Accessories</a></li><li><a href="https://d-themes.com/wordpress/riode/demo-6/product-category/bags/" class="nav-filter" data-cat="81" data-filter="bags">Bags</a></li><li><a href="https://d-themes.com/wordpress/riode/demo-6/product-category/electronics/" class="nav-filter" data-cat="79" data-filter="electronics">Electronics</a></li><li><a href="https://d-themes.com/wordpress/riode/demo-6/product-category/essentials/" class="nav-filter" data-cat="82" data-filter="essentials">Essentials</a></li><li><a href="https://d-themes.com/wordpress/riode/demo-6/product-category/sale/" class="nav-filter" data-cat="83" data-filter="sale">Sale</a></li></ul>
+                            <div class="search-wrapper hs-toggle ">
+                                <a href="#" class="search-toggle">
+                                    <i class="d-icon-search"></i>
+                                </a>
+                                <form action="https://d-themes.com/wordpress/riode/demo-6/" method="get" class="input-wrapper">
+                                    <input type="hidden" name="post_type" value="product" />
+
+
+                                    <input type="search" class="form-control" name="s" placeholder="Search your keyword..." required="" autocomplete="off">
+
+                                    <div class="live-search-list"></div>
+
+                                    <button class="btn btn-search" type="submit">
+                                        <i class="d-icon-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="product-archive">
+                        <ul class="products gutter-md  row cols-lg-4 cols-md-3 cols-sm-2 cols-2 skeleton-body" data-col-list=" row cols-xl-1 cols-sm-1 cols-2" data-col-grid=" row cols-lg-4 cols-md-3 cols-sm-2 cols-2" data-load="{&quot;props&quot;:&quot;&quot;,&quot;args&quot;:{&quot;shop&quot;:true},&quot;max&quot;:3}">
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2441 status-publish first instock product_cat-electronics has-post-thumbnail shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/red-cap-sound-maker\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-11.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-11.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2441\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2441\" data-product_sku=\"998850\" aria-label=\"Add &ldquo;Red Cap Sound Maker&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2441 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2441\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2441,&quot;parent_product_id&quot;:2441,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2441\" rel=\"nofollow\" data-product-id=\"2441\" data-product-type=\"simple\" data-original-product-id=\"2441\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2441\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/red-cap-sound-maker\/\">Red Cap Sound Maker<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>119.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/red-cap-sound-maker\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2435 status-publish instock product_cat-electronics has-post-thumbnail shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mass-capacity-battery\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-9.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-9.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2435\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2435\" data-product_sku=\"998848\" aria-label=\"Add &ldquo;Mass Capacity Battery&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2435 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2435\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2435,&quot;parent_product_id&quot;:2435,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2435\" rel=\"nofollow\" data-product-id=\"2435\" data-product-type=\"simple\" data-original-product-id=\"2435\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2435\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mass-capacity-battery\/\">Mass Capacity Battery<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>119.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mass-capacity-battery\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2434 status-publish instock product_cat-electronics has-post-thumbnail featured shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/white-sound-maker\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-8.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-8.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-top\" title=\"Featured Product\">Top<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2434\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2434\" data-product_sku=\"998847\" aria-label=\"Add &ldquo;White Sound Maker&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2434 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2434\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2434,&quot;parent_product_id&quot;:2434,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2434\" rel=\"nofollow\" data-product-id=\"2434\" data-product-type=\"simple\" data-original-product-id=\"2434\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2434\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/white-sound-maker\/\">White Sound Maker<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>110.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/white-sound-maker\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2429 status-publish last instock product_cat-electronics has-post-thumbnail sale shipping-taxable purchasable product-type-variable\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/sonny-sound-maker\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-7.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-7.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-action-vertical\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/sonny-sound-maker\/\" data-quantity=\"1\" class=\"btn-product-icon product_type_variable add_to_cart_button\" data-product_id=\"2429\" data-product_sku=\"998846\" aria-label=\"Select options for &ldquo;Sonny Sound Maker&rdquo;\" rel=\"nofollow\">Select Options<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2429 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2429\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2429,&quot;parent_product_id&quot;:2429,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2429\" rel=\"nofollow\" data-product-id=\"2429\" data-product-type=\"variable\" data-original-product-id=\"2429\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2429\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/sonny-sound-maker\/\">Sonny Sound Maker<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>199.00<\ /bdi><\ /span> &ndash; <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>220.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/sonny-sound-maker\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2428 status-publish first instock product_cat-electronics has-post-thumbnail featured shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/medium-size-amplifier\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/3-6.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/4-6.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-top\" title=\"Featured Product\">Top<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2428\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2428\" data-product_sku=\"998845\" aria-label=\"Add &ldquo;Medium Size Amplifier&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2428 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2428\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2428,&quot;parent_product_id&quot;:2428,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2428\" rel=\"nofollow\" data-product-id=\"2428\" data-product-type=\"simple\" data-original-product-id=\"2428\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2428\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/medium-size-amplifier\/\">Medium Size Amplifier<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>210.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/medium-size-amplifier\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2427 status-publish instock product_cat-electronics has-post-thumbnail shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-third-kind\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-5.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-5.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2427\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2427\" data-product_sku=\"998844\" aria-label=\"Add &ldquo;Phone Sound Maker Third Kind&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2427 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2427\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2427,&quot;parent_product_id&quot;:2427,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2427\" rel=\"nofollow\" data-product-id=\"2427\" data-product-type=\"simple\" data-original-product-id=\"2427\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2427\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-third-kind\/\">Phone Sound Maker Third Kind<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>160.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-third-kind\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2423 status-publish instock product_cat-electronics has-post-thumbnail featured shipping-taxable purchasable product-type-variable\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-second-kind\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-4.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-4.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-top\" title=\"Featured Product\">Top<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-second-kind\/\" data-quantity=\"1\" class=\"btn-product-icon product_type_variable add_to_cart_button\" data-product_id=\"2423\" data-product_sku=\"998843\" aria-label=\"Select options for &ldquo;Phone Sound Maker Second Kind&rdquo;\" rel=\"nofollow\">Select Options<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2423 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2423\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2423,&quot;parent_product_id&quot;:2423,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2423\" rel=\"nofollow\" data-product-id=\"2423\" data-product-type=\"variable\" data-original-product-id=\"2423\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2423\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-second-kind\/\">Phone Sound Maker Second Kind<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>139.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-maker-second-kind\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2422 status-publish last instock product_cat-electronics has-post-thumbnail sale featured shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-louder\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-3.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-3.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-top\" title=\"Featured Product\">Top<\ /label><label class=\"product-label label-sale\" title=\"On-Sale Product\">5% Off<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2422\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2422\" data-product_sku=\"998842\" aria-label=\"Add &ldquo;Phone Sound Louder&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2422 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2422\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2422,&quot;parent_product_id&quot;:2422,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2422\" rel=\"nofollow\" data-product-id=\"2422\" data-product-type=\"simple\" data-original-product-id=\"2422\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2422\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-louder\/\">Phone Sound Louder<\ /a><\ /h3>\r\n\t<span class=\"price\"><ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>199.00<\ /bdi><\ /span><\ /ins> <del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>210.00<\ /bdi><\ /span><\ /del><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/phone-sound-louder\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap electronics">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2421 status-publish first instock product_cat-electronics has-post-thumbnail sale shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/soft-sound-maker\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-2.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-2.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-sale\" title=\"On-Sale Product\">24% Off<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2421\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2421\" data-product_sku=\"998841\" aria-label=\"Add &ldquo;Soft Sound Maker&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2421 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2421\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2421,&quot;parent_product_id&quot;:2421,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2421\" rel=\"nofollow\" data-product-id=\"2421\" data-product-type=\"simple\" data-original-product-id=\"2421\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2421\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/electronics\/\" rel=\"tag\">Electronics<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/soft-sound-maker\/\">Soft Sound Maker<\ /a><\ /h3>\r\n\t<span class=\"price\"><ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>98.00<\ /bdi><\ /span><\ /ins> <del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>129.00<\ /bdi><\ /span><\ /del><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/soft-sound-maker\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap bags">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2286 status-publish instock product_cat-bags has-post-thumbnail sale shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mens-poket-backpack\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/7-1.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-1.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-sale\" title=\"On-Sale Product\">24% Off<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2286\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2286\" data-product_sku=\"998801\" aria-label=\"Add &ldquo;Men&#039;s Poket backpack&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2286 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2286\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2286,&quot;parent_product_id&quot;:2286,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2286\" rel=\"nofollow\" data-product-id=\"2286\" data-product-type=\"simple\" data-original-product-id=\"2286\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2286\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/bags\/\" rel=\"tag\">Bags<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mens-poket-backpack\/\">Men&#8217;s Poket backpack<\ /a><\ /h3>\r\n\t<span class=\"price\"><ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>98.00<\ /bdi><\ /span><\ /ins> <del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>129.00<\ /bdi><\ /span><\ /del><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/mens-poket-backpack\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap bags">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-2285 status-publish instock product_cat-bags has-post-thumbnail sale featured shipping-taxable purchasable product-type-simple\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/womens-poket-backpack\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/2.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2021\/01\/1.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-label-group\"><label class=\"product-label label-top\" title=\"Featured Product\">Top<\ /label><label class=\"product-label label-sale\" title=\"On-Sale Product\">24% Off<\ /label><\ /div><div class=\"product-action-vertical\"><a href=\"?add-to-cart =2285\" data-quantity=\"1\" class=\"btn-product-icon product_type_simple add_to_cart_button ajax_add_to_cart\" data-product_id=\"2285\" data-product_sku=\"998800\" aria-label=\"Add &ldquo;Women&#039;s Poket backpack&rdquo; to your cart\" rel=\"nofollow\">Add to Cart<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-2285 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"2285\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2285,&quot;parent_product_id&quot;:2285,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =2285\" rel=\"nofollow\" data-product-id=\"2285\" data-product-type=\"simple\" data-original-product-id=\"2285\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"2285\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/bags\/\" rel=\"tag\">Bags<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/womens-poket-backpack\/\">Women&#8217;s Poket backpack<\ /a><\ /h3>\r\n\t<span class=\"price\"><ins><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>98.00<\ /bdi><\ /span><\ /ins> <del><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>129.00<\ /bdi><\ /span><\ /del><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/womens-poket-backpack\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                            <li class="product-wrap sale">
+                                <script type="text/template">
+                                    "\t
+                                    <div class=\"product-loop content-center product-default product type-product post-1630 status-publish last instock product_cat-sale has-post-thumbnail shipping-taxable purchasable product-type-variable\">\n\t\t<figure class=\"product-media\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/coast-pool-comfort-jacket\/\" class=\"woocommerce-LoopProduct-link woocommerce-loop-product__link\"><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/1-19.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><img style=\"padding-top : 112.67%;\" width=\"300\" height=\"338\" src=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png\" data-lazy=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-300x338.jpg\" class=\"d-lazyload attachment-woocommerce_thumbnail size-woocommerce_thumbnail\" alt=\"Product Image\" srcset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets\/images\/lazy.png 100w\" data-lazyset=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-300x338.jpg 300w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-267x300.jpg 267w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-768x864.jpg 768w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-150x169.jpg 150w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19-600x675.jpg 600w, https:\ /\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/2020\/09\/2-19.jpg 800w\" sizes=\"(max-width: 300px) 100vw, 300px\" \ /><\ /a><div class=\"product-action-vertical\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/coast-pool-comfort-jacket\/\" data-quantity=\"1\" class=\"btn-product-icon product_type_variable add_to_cart_button\" data-product_id=\"1630\" data-product_sku=\"998808\" aria-label=\"Select options for &ldquo;Coast Pool Comfort Trunk&rdquo;\" rel=\"nofollow\">Select Options<\ /a>\n<div\n\tclass =\"yith-wcwl-add-to-wishlist add-to-wishlist-1630 btn-product-icon wishlist-fragment on-first-load\"\n\tdata-fragment-ref=\"1630\"\n\tdata-fragment-options =\"{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1630,&quot;parent_product_id&quot;:1630,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}\"\n>\n\t\t\t\n\t\t\t<!-- ADD TO WISHLIST -->\n\t\t\t<div class=\"yith-wcwl-add-button\">\n\t<a href=\"?add_to_wishlist =1630\" rel=\"nofollow\" data-product-id=\"1630\" data-product-type=\"variable\" data-original-product-id=\"1630\" class=\"add_to_wishlist single_add_to_wishlist\" data-title=\"Add to wishlist\">\n\t\t<i class=\"yith-wcwl-icon fa fa-heart-o\"><\ /i><span>Add to wishlist<\ /span>\t<\ /a>\n<\ /div>\n\n\t\t\t<!-- COUNT TEXT -->\n\t\t\t\n\t\t\t<\ /div>\n<\ /div><div class=\"product-action\"><button class=\"btn-product btn-quickview\" data-product=\"1630\" title=\"Quick View\">Quick View<\ /button><\ /div><\ /figure><div class=\"product-details\"><div class=\"product-cat\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product-category\/sale\/\" rel=\"tag\">Sale<\ /a><\ /div><h3 class=\"woocommerce-loop-product__title\"><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/coast-pool-comfort-jacket\/\">Coast Pool Comfort Trunk<\ /a><\ /h3>\r\n\t<span class=\"price\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>211.00<\ /bdi><\ /span> &ndash; <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>219.00<\ /bdi><\ /span><\ /span>\r\n<div class=\"woocommerce-product-rating\">\r\n\t<div class=\"star-rating\" role=\"img\" aria-label=\"Rated 0 out of 5\"><span style=\"width:0%\">Rated <strong class=\"rating\">0<\ /strong> out of 5<\ /span><\ /div><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/product\/coast-pool-comfort-jacket\/#reviews\" class=\"woocommerce-review-link scroll-to\" rel=\"nofollow\">( 0 reviews )<\ /a><\ /div>\r\n<\ /div>\t<\ /div>\n\t\t"
+                                </script><div class="skel-pro"></div>
+                            </li>
+                        </ul>
+                    </div><button class="btn btn-load btn-primary">Load More</button>
+                </div>
+                <aside class="sidebar controllable-sidebar right-sidebar shop-sidebar sidebar-offcanvas skeleton-body" id="shop-sidebar">
+
+                    <div class="sidebar-overlay">
+                    </div>
+                    <a class="sidebar-close" href="#"><i class="close-icon"></i></a>
+
+
+                    <div class="sidebar-content">
+                        <script type="text/template">
+                            "\r\n\t\t\r\n\t\t\t\r\n\t\t
+                            <div class=\"filter-actions\">\r\n\t\t\t<a href=\"#\" class=\"sidebar-toggle-btn toggle-remain btn btn-sm btn-rounded btn-outline btn-primary\">Filter<i class=\"d-icon-arrow-left\"><\ /i><\ /a>\r\n\t\t\t<a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/\" class=\"filter-clean\">Clean All<\ /a>\r\n\t\t<\ /div>\r\n\r\n\t\t<nav id=\"yith-woo-ajax-reset-navigation-2\" class=\"widget yith-woocommerce-ajax-product-filter yith-woo-ajax-reset-navigation yith-woo-ajax-navigation woocommerce widget_layered_nav widget-collapsible\" style=\"display:none\"><\ /nav><nav id=\"riode-price-filter-3\" class=\"widget widget-price-filter riode-price-filter widget-collapsible\"><h3 class=\"widget-title\">Filter by price<\ /h3><ul class=\"riode-product-prices with-checkbox\"><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/?max_price =50\">$0.00 - <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>50.00<\ /bdi><\ /span><\ /a><span class=\"count\">(0)<\ /span><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/?min_price =50&max_price =100\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>50.00<\ /bdi><\ /span> - <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>100.00<\ /bdi><\ /span><\ /a><span class=\"count\">(7)<\ /span><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/?min_price =100&max_price =200\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>100.00<\ /bdi><\ /span> - <span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>200.00<\ /bdi><\ /span><\ /a><span class=\"count\">(18)<\ /span><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/?min_price =200\"><span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\">&#36;<\ /span>200.00<\ /bdi><\ /span>+<\ /a><span class=\"count\">(5)<\ /span><\ /li><\ /ul><\ /nav><nav id=\"yith-woo-ajax-navigation-2\" class=\"widget yith-woocommerce-ajax-product-filter yith-woo-ajax-navigation woocommerce widget_layered_nav widget-collapsible\"><h3 class=\"widget-title\">Size<\ /h3><ul class=\"yith-wcan-list yith-wcan \"><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_size =extra-large&#038;query_type_size =or\">Extra Large<\ /a> <small class=\"count\">15<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_size =large&#038;query_type_size =or\">Large<\ /a> <small class=\"count\">28<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_size =medium&#038;query_type_size =or\">Medium<\ /a> <small class=\"count\">28<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_size =small&#038;query_type_size =or\">Small<\ /a> <small class=\"count\">18<\ /small><div class=\"clear\"><\ /div><\ /li><\ /ul><\ /nav><nav id=\"yith-woo-ajax-navigation-3\" class=\"widget yith-woocommerce-ajax-product-filter yith-woo-ajax-navigation woocommerce widget_layered_nav widget-collapsible\"><h3 class=\"widget-title\">Color<\ /h3><ul class=\"yith-wcan-list yith-wcan \"><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_color =black&#038;query_type_color =or\">Black<\ /a> <small class=\"count\">20<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_color =blue&#038;query_type_color =or\">Blue<\ /a> <small class=\"count\">15<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_color =brown&#038;query_type_color =or\">Brown<\ /a> <small class=\"count\">13<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_color =green&#038;query_type_color =or\">Green<\ /a> <small class=\"count\">19<\ /small><div class=\"clear\"><\ /div><\ /li><\ /ul><\ /nav><nav id=\"yith-woo-ajax-navigation-4\" class=\"widget yith-woocommerce-ajax-product-filter yith-woo-ajax-navigation woocommerce widget_layered_nav widget-collapsible\"><h3 class=\"widget-title\">Brand<\ /h3><ul class=\"yith-wcan-list yith-wcan \"><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_brands =cinderella&#038;query_type_brands =or\">Cinderella<\ /a> <small class=\"count\">5<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_brands =comedy&#038;query_type_brands =or\">Comedy<\ /a> <small class=\"count\">15<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_brands =rightcheck&#038;query_type_brands =or\">RightCheck<\ /a> <small class=\"count\">7<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_brands =skillstar&#038;query_type_brands =or\">SkillStar<\ /a> <small class=\"count\">6<\ /small><div class=\"clear\"><\ /div><\ /li><li><a href=\"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/?filter_brands =sls&#038;query_type_brands =or\">SLS<\ /a> <small class=\"count\">8<\ /small><div class=\"clear\"><\ /div><\ /li><\ /ul><\ /nav>\r\n\t\t\t\t"
+                        </script><div class="widget-2"></div>
+                    </div>
+
+                </aside>
+            </div><div class="sticky-icon-links">
+                <ul>
+                    <li><a href="#" class="demo-toggle"><i class="fas fa-home"></i><span>Demos</span></a></li>
+                    <li><a href="https://d-themes.com/wordpress/riode/documentation/" target="_blank"><i class="fas fa-info-circle"></i><span>Documentation</span></a></li>
+                    <li><a href="https://d-themes.com/support/" target="_blank"><i class="fas fa-comments"></i><span>Support</span></a></li>
+                    <li><a href="https://themeforest.net/downloads/" target="_blank"><i class="fas fa-star"></i><span>Reviews</span></a></li>
+                    <li><a href="https://d-themes.com/buynow/riodewp" target="_blank"><i class="fas fa-shopping-cart"></i><span>Buy now!</span></a></li>
+                </ul>
+            </div>
+            <div class="demos-list">
+                <div class="demos-overlay"></div>
+                <a class="demos-close" href="#"><i class="close-icon"></i></a>
+                <div class="demos-content scrollable scrollable-light">
+                    <h3 class="demos-title">Demos</h3>
+                    <div class="demos">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer custom-footer footer-2528" id="footer">
+            <style>
+                .elementor-2528 .elementor-element.elementor-element-e7be223.elementor-column > .elementor-widget-wrap {
+                    justify-content: center;
+                }
+
+                .elementor-2528 .elementor-element.elementor-element-e7be223 > .elementor-element-populated {
+                    padding: 39px 10px 27px 10px;
+                }
+
+                .elementor-2528 .elementor-element.elementor-element-dea3136 > .elementor-widget-container {
+                    margin: 0px 0px 18px 0px;
+                }
+
+                .elementor-2528 .elementor-element.elementor-element-4672017 > .elementor-element-populated {
+                    border-style: solid;
+                    border-width: 1px 0px 0px 0px;
+                    border-color: #2A2A2A;
+                    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+                    padding: 26px 0px 25px 0px;
+                }
+
+                    .elementor-2528 .elementor-element.elementor-element-4672017 > .elementor-element-populated > .elementor-background-overlay {
+                        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+                    }
+
+                .elementor-element-4b4f055 .title {
+                    color: #777777;
+                    font-size: 12px;
+                }
+
+                @@media(max-width:767px) {
+                    .elementor-2528 .elementor-element.elementor-element-dea3136 > .elementor-widget-container {
+                        padding: 0px 0px 0px 26px;
+                    }
+                }
+            </style>
+            <style id="block_2528_css">
+                .custom-footer .menu {
+                    justify-content: center;
+                    flex-wrap: wrap
+                }
+
+                    .custom-footer .menu li:last-child {
+                        margin-bottom: 1.5rem
+                    }
+
+                .custom-footer .custom-footer-bottom.elementor-section > .elementor-container {
+                    max-width: 1180px
+                }
+
+                @@media ( min-width:576px ) {
+                    .custom-footer .menu li:last-child {
+                        margin-right: 0
+                    }
+                }
+            </style><div class="riode-block elementor elementor-2528" data-block-id="2528">
+                <div class=" elementor-section elementor-top-section elementor-element elementor-element-8d35c3d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d35c3d" data-element_type="section">
+
+                    <div class="elementor-container elementor-column-gap-default">
+
+
+                        <div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e7be223" data-id="e7be223" data-element_type="column">
+
+
+
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class=" elementor-element elementor-element-dea3136 elementor-widget elementor-widget-riode_widget_menu" data-id="dea3136" data-element_type="widget" data-widget_type="riode_widget_menu.default">
+                                    <div class="elementor-widget-container">
+                                        <nav class=" skin2 footer-nav">
+                                            <ul id="menu-footer-nav" class="menu  horizontal-menu lazy-menu" style="">
+                                                <li id="menu-item-904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-904"><a href="https://d-themes.com/wordpress/riode/elements/about-us/">About Us</a></li>
+                                                <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="https://d-themes.com/wordpress/riode/demo-6/blog/">Blog</a></li>
+                                                <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="https://d-themes.com/wordpress/riode/elements/faqs/">FAQs</a></li>
+                                                <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#">Order Tracking</a></li>
+                                                <li id="menu-item-905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-905"><a href="https://d-themes.com/wordpress/riode/elements/contact-us/">Contact Us</a></li>
+                                                <li id="menu-item-1463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1463"><a href="https://d-themes.com/buynow/riodewp/">Buy Riode!</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <div class=" elementor-element elementor-element-51c7c60 w-auto elementor-widget elementor-widget-wp-widget-social_link-widget" data-id="51c7c60" data-element_type="widget" data-widget_type="wp-widget-social_link-widget.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="widget widget-social-links widget-collapsible">
+                                            <div class="social-icons framed-icons">
+                                                <a class="social-icon framed social-facebook" target="_blank" href="#">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a class="social-icon framed social-twitter" target="_blank" href="#">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a class="social-icon framed social-linkedin" target="_blank" href="#">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" elementor-section elementor-top-section elementor-element elementor-element-4c2a9ce custom-footer-bottom elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c2a9ce" data-element_type="section">
+
+                    <div class="elementor-container elementor-column-gap-default">
+
+
+                        <div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4672017" data-id="4672017" data-element_type="column">
+
+
+
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class=" elementor-element elementor-element-4b4f055 copyright elementor-widget elementor-widget-riode_widget_heading" data-id="4b4f055" data-element_type="widget" data-widget_type="riode_widget_heading.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="title-wrapper  title-center"><p class="title">Riode eCommerce © 2021. All Rights Reserved</p></div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="mobile-icon-bar sticky-content fix-bottom items-5">
+        <a href="https://d-themes.com/wordpress/riode/demo-6" class="mobile-item active"><i class="d-icon-home"></i><span>Home</span></a><a href="https://d-themes.com/wordpress/riode/demo-6/" class="mobile-item"><i class="d-icon-volume"></i><span>Categories</span></a><a href="https://d-themes.com/wordpress/riode/demo-6/wishlist/" class="mobile-item"><i class="d-icon-heart"></i><span>Wishlist</span></a><a href="https://d-themes.com/wordpress/riode/demo-6/my-account/" class="mobile-item"><i class="d-icon-user"></i><span>Account</span></a>
+        <div class="dropdown cart-dropdown dir-up mini-basket-dropdown">
+            <a class="cart-toggle mobile-item" href="https://d-themes.com/wordpress/riode/demo-6/cart/">
+                <i class="d-icon-bag"></i>
+                <span>Cart</span>
+            </a>
+
+            <div class="cart-popup widget_shopping_cart dropdown-box">
+                <div class="widget_shopping_cart_content">
+                    <div class="cart-loading"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <a class="scroll-top" href="#" title="Top" role="button"><i class="d-icon-arrow-up"></i></a>
+
+    <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu-container" style="height: 100vh;">
+            <!-- Need to ajax load mobile menus -->
+        </div>
+        <a class="mobile-menu-close" href="#"><i class="close-icon"></i></a>
+    </div>
+
+    <div class="popup p-absolute t-mc" data-popup-options='{"popup_on":"load","popup_within":"7.5","popup_animation":"fadeIn","popup_duration":"200ms"}' style="display: none; max-width: 720px; left:50%; top:50%; right:auto; bottom:auto;">
+        <style>
+            .elementor-1179 .elementor-element.elementor-element-ec63f8a {
+                background-color: #FFFFFF;
+                background-image: url("https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/newsletter-popup.jpg");
+                background-position: 60% 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .elementor-element-ec63f8a .elementor-repeater-item-heading {
+                margin: 42px 0px 6px 0px;
+            }
+
+                .elementor-element-ec63f8a .elementor-repeater-item-heading.text, .elementor-element-ec63f8a .elementor-repeater-item-heading .text {
+                    color: #222222;
+                    font-size: 2rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 1.2em;
+                }
+
+            .elementor-element-ec63f8a .elementor-repeater-item-text {
+                margin: 0px 0px 7px 0px;
+            }
+
+                .elementor-element-ec63f8a .elementor-repeater-item-text.text, .elementor-element-ec63f8a .elementor-repeater-item-text .text {
+                    color: #222222;
+                    font-size: 32px;
+                    letter-spacing: -1.4px;
+                }
+
+            .elementor-element-ec63f8a .elementor-repeater-item-4447506 {
+                margin: 0px 2px 25px 2px;
+            }
+
+                .elementor-element-ec63f8a .elementor-repeater-item-4447506.text, .elementor-element-ec63f8a .elementor-repeater-item-4447506 .text {
+                    color: #999999;
+                    font-size: 14px;
+                    line-height: 1.7em;
+                }
+
+            .elementor-element-ec63f8a .elementor-repeater-item-button.text, .elementor-element-ec63f8a .elementor-repeater-item-button .text {
+                color: #999999;
+            }
+
+            .elementor-element-ec63f8a .banner {
+                min-height: 384px;
+            }
+
+                .elementor-element-ec63f8a .banner .banner-content {
+                    left: auto;
+                    right: 42px;
+                    max-width: 330px;
+                    width: 100%;
+                }
+
+            @@media(max-width:767px) {
+                .elementor-element-ec63f8a .banner .banner-content {
+                    right: 20px;
+                }
+            }
+        </style>
+        <style id="block_1179_css">
+            .mfp-newsletter-popup .popup {
+                background: none
+            }
+
+            .newsletter-content .wpcf7-form > p {
+                font-size: 12px
+            }
+
+            .newsletter-content span .wpcf7-form-control {
+                border-color: #222;
+                border-radius: 3px 0 0 3px;
+                padding: 0 12px
+            }
+
+            .newsletter-content .btn {
+                font-size: 13px;
+                border-radius: 0 3px 3px 0;
+                border-width: 1px
+            }
+
+            .newsletter-content .checkbox-702 {
+                flex: none;
+                width: 100%;
+                margin-top: 1.7rem;
+                text-align: center;
+                color: #666
+            }
+
+            .newsletter-content .wpcf7-list-item-label:before {
+                border-color: #666
+            }
+
+            .newsletter-content .hide-popup span {
+                margin-left: 0
+            }
+
+            .newsletter-content span.wpcf7-not-valid-tip {
+                display: none
+            }
+
+            .newsletter-content {
+                text-align: center
+            }
+
+            @@media (max-width:479px) {
+                .newsletter-content .banner .banner-content {
+                    max-width: 33rem;
+                    width: calc(100% - 40px);
+                    left: 20px;
+                    margin: 0 auto
+                }
+
+                .newsletter-content .elementor-widget-riode_widget_banner {
+                    background-image: none !important
+                }
+            }
+        </style><div class="riode-block elementor elementor-1179" data-block-id="1179">
+            <section class=" elementor-section elementor-top-section elementor-element elementor-element-65739dd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="65739dd" data-element_type="section">
+
+                <div class="elementor-container elementor-column-gap-no">
+
+
+                    <div class=" elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da1e0dc newsletter-content ml-auto" data-id="da1e0dc" data-element_type="column">
+
+
+
+                        <div class="elementor-widget-wrap elementor-element-populated">
+                            <div class=" elementor-element elementor-element-ec63f8a br-10 elementor-widget elementor-widget-riode_widget_banner d-lazy-back" data-id="ec63f8a" data-element_type="widget" data-settings="{&quot;banner_background_background&quot;:&quot;classic&quot;}" data-widget_type="riode_widget_banner.default" data-lazy="https://d-themes.com/wordpress/riode/demo-6/wp-content/uploads/sites/11/2020/09/newsletter-popup.jpg">
+                                <div class="elementor-widget-container">
+                                    <div class="el-banner banner simple-center el-banner-fixed banner-fixed p-static">
+                                        <div class="banner-content t-m">
+                                            <h4 class="banner-item elementor-repeater-item-heading item-block text">Up to <span class="text-primary">20% off</span></h4><h2 class="banner-item elementor-repeater-item-text item-block text">Sign up to <strong class="text-uppercase" style="font-weight: 800;">riode</strong></h2><p class="banner-item elementor-repeater-item-4447506 item-block text">Subscribe to the Riode eCommerce newsletter to receive timely updates from your favorite products.</p><div class="banner-item elementor-repeater-item-button item-block text">
+                                                <div role="form" class="wpcf7" id="wpcf7-f1191-o1" lang="en-US" dir="ltr">
+                                                    <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+                                                    <form action="/wordpress/riode/demo-6/#wpcf7-f1191-o1" method="post" class="wpcf7-form init" data-status="init">
+                                                        <div style="display: none;">
+                                                            <input type="hidden" name="_wpcf7" value="1191" />
+                                                            <input type="hidden" name="_wpcf7_version" value="5.4.2" />
+                                                            <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1191-o1" />
+                                                            <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                                        </div>
+                                                        <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" aria-required="true" aria-invalid="false" placeholder="Email address here..." /></span><button type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn btn-dark">SUBMIT</button><span class="wpcf7-form-control-wrap checkbox-702"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-exclusive-checkbox hide-popup"><span class="wpcf7-list-item first last"><label><input type="checkbox" name="checkbox-702" value="Don&#039;t show this popup again" /><span class="wpcf7-list-item-label">Don&#039;t show this popup again</span></label></span></span></span></p>
+                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="application/ld+json">{"@@context":"https:\/\/schema.org\/","@@type":"WebSite","name":"Demo 6","url":"https:\/\/d-themes.com\/wordpress\/riode\/demo-6","potentialAction":{"@@type":"SearchAction","target":"https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/?s={search_term_string}&amp;post_type=product","query-input":"required name=search_term_string"}}</script>
+    <script type="text/javascript">
+        (function () {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2' id='accounting-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9-wc.5.7.1' id='selectWoo-js'></script>
+    <script id='yith-wcan-shortcodes-js-extra'>
+        var yith_wcan_shortcodes = { "query_param": "yith_wcan", "supported_taxonomies": ["product_cat", "product_tag", "pa_brands", "pa_color", "pa_size"], "content": "#content", "change_browser_url": "1", "instant_filters": "1", "ajax_filters": "1", "show_clear_filter": "", "scroll_top": "", "scroll_target": "", "modal_on_mobile": "", "session_param": "", "show_current_children": "", "loader": "", "toggles_open_on_modal": "", "mobile_media_query": "991", "base_url": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/shop\/", "terms_per_page": "10", "currency_format": { "symbol": "&#36;", "decimal": ".", "thousand": ",", "precision": 2, "format": "%s%v" }, "labels": { "empty_option": "All", "search_placeholder": "Search...", "no_items": "No item found", "show_more": "Show %d more", "close": "Close", "save": "Save", "show_results": "Show results", "clear_selection": "Clear", "clear_all_selections": "Clear All" } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/yith-wcan-shortcodes.min.js?ver=4.2.1' id='yith-wcan-shortcodes-js'></script>
+    <script src='//d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js?ver=3.1.6' id='prettyPhoto-js'></script>
+    <script id='jquery-yith-wcwl-js-extra'>
+        var yith_wcwl_l10n = { "ajax_url": "\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "multi_wishlist": "", "hide_add_button": "1", "enable_ajax_loading": "", "ajax_loader_url": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg", "remove_from_wishlist_after_add_to_cart": "1", "is_wishlist_responsive": "1", "time_to_close_prettyphoto": "3000", "fragments_index_glue": ".", "reload_on_found_variation": "1", "mobile_media_query": "768", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.", "added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message alert alert-simple alert-icon alert-success\" role=\"alert\"><i class=\"fas fa-check\"><\/i>Product added to cart successfully<button type=\"button\" class=\"btn btn-link btn-close\"><i class=\"close-icon\"><\/i><\/button><\/div><\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem", "load_mobile_action": "load_mobile", "delete_item_action": "delete_item", "save_title_action": "save_title", "save_privacy_action": "save_privacy", "load_fragments": "load_fragments" }, "nonce": { "add_to_wishlist_nonce": "2cfc9ba974", "remove_from_wishlist_nonce": "bf9933ecf8", "reload_wishlist_and_adding_elem_nonce": "be7e788960", "load_mobile_nonce": "b6178dbdeb", "delete_item_nonce": "7bdfc1aa68", "save_title_nonce": "15e05e5b08", "save_privacy_nonce": "fe7b060171", "load_fragments_nonce": "0388fbddc5" } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js?ver=3.1.1' id='jquery-yith-wcwl-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+    <script id='contact-form-7-js-extra'>
+        var wpcf7 = { "api": { "root": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-json\/", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2' id='contact-form-7-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.5.7.1' id='jquery-blockui-js'></script>
+    <script id='wc-add-to-cart-js-extra'>
+        var wc_add_to_cart_params = { "ajax_url": "\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/wordpress\/riode\/demo-6\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=5.7.1' id='wc-add-to-cart-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.5.7.1' id='js-cookie-js'></script>
+    <script id='woocommerce-js-extra'>
+        var woocommerce_params = { "ajax_url": "\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/wordpress\/riode\/demo-6\/?wc-ajax=%%endpoint%%" };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.7.1' id='woocommerce-js'></script>
+    <script id='wc-cart-fragments-js-extra'>
+        var wc_cart_fragments_params = { "ajax_url": "\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/wordpress\/riode\/demo-6\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_b1b166b25efbe581250a7df14b56f7db", "fragment_name": "wc_fragments_b1b166b25efbe581250a7df14b56f7db", "request_timeout": "5000" };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.7.1' id='wc-cart-fragments-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/jquery.jseldom.min.js?ver=0.0.2' id='jseldom-js'></script>
+    <script id='yith-wcan-script-js-extra'>
+        var yith_wcan = { "container": ".products", "pagination": "nav.woocommerce-pagination", "result_count": ".woocommerce-result-count", "wc_price_slider": { "wrapper": ".price_slider", "min_price": ".price_slider_amount #min_price", "max_price": ".price_slider_amount #max_price" }, "is_mobile": "", "scroll_top": ".yit-wcan-container", "scroll_top_mode": "mobile", "change_browser_url": "1", "avada": { "is_enabled": false, "sort_count": "ul.sort-count.order-dropdown" }, "flatsome": { "is_enabled": false, "lazy_load_enabled": false }, "yootheme": { "is_enabled": false } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/yith-wcan-frontend.min.js?ver=4.2.1' id='yith-wcan-script-js'></script>
+    <script id='riode-theme-js-extra'>
+        var riode_vars = { "ajax_url": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php", "nonce": "33155a16cd", "lazyload": "1", "skeleton_screen": "1", "container": "1220", "gutters": { "lg": "30", "md": "20", "sm": "10" }, "assets_url": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode\/assets", "texts": { "loading": "Loading...", "loadmore_error": "Loading failed", "popup_error": "The content could not be loaded.", "show_info_all": "all %d", "added_to_cart": "Successfully Added To Cart", "add_to_wishlist": "Add to wishlist", "view_cart": "View Cart", "view_checkout": "Check Out", "live_search_error": "No products were found matching your selection" }, "resource_async_js": "1", "resource_split_tasks": "1", "resource_idle_run": "1", "resource_after_load": "1", "riode_cache_key": "riode_cache_b4098f8c8e8a1bd1f368051bb642c470", "lazyload_menu": "1", "shop_toolbox_sticky": "", "preview": { "elementor": false }, "menu_last_time": "1623872139", "blog_ajax": "1", "shop_ajax": "1", "quickview_type": "popup", "product_quickview_popup_loading": "skeleton", "product_quickview_offcanvas_loading": "loading", "pre_order": "", "wc_alert_remove": "10000", "pages": { "shop": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/", "cart": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/cart\/", "checkout": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/checkout\/" }, "single_product": { "zoom_enabled": true, "zoom_options": [] }, "placeholder_img": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/uploads\/sites\/11\/woocommerce-placeholder-300x300.png", "sales_popup": { "title": "Someone Purchased", "start": 30, "interval": 60, "themeuri": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/themes\/riode" } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/js/theme.min.js?ver=1.4.0' id='riode-theme-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+    <script id='wc-single-product-js-extra'>
+        var wc_single_product_params = { "i18n_required_rating_text": "Please select a rating", "review_rating_required": "yes", "flexslider": { "rtl": false, "animation": "slide", "smoothHeight": true, "directionNav": false, "controlNav": "thumbnails", "slideshow": false, "animationSpeed": 500, "animationLoop": false, "allowOneSlide": false }, "zoom_enabled": "", "zoom_options": [], "photoswipe_enabled": "1", "photoswipe_options": { "shareEl": false, "closeOnScroll": false, "history": false, "hideAnimationDuration": 0, "showAnimationDuration": 0 }, "flexslider_enabled": "" };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=5.7.1' id='wc-single-product-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+    <script id='wp-util-js-extra'>
+        var _wpUtilSettings = { "ajax": { "url": "\/wordpress\/riode\/demo-6\/wp-admin\/admin-ajax.php" } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/wp-util.min.js?ver=5.8.2' id='wp-util-js'></script>
+    <script id='wc-add-to-cart-variation-js-extra'>
+        var wc_add_to_cart_variation_params = { "wc_ajax_url": "\/wordpress\/riode\/demo-6\/?wc-ajax=%%endpoint%%", "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.", "i18n_make_a_selection_text": "Please select some product options before adding this product to your cart.", "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination." };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.7.1' id='wc-add-to-cart-variation-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.5.7.1' id='zoom-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/inc/add-on/skeleton/skeleton.min.js?ver=1.4.0' id='riode-skeleton-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/wp-embed.min.js?ver=5.8.2' id='wp-embed-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/jquery.lazyload/jquery.lazyload.min.js?ver=5.8.2' id='jquery-lazyload-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/jquery.floating/jquery.floating.min.js?ver=5.8.2' id='jquery-floating-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/parallax/parallax.min.js?ver=5.8.2' id='jquery-parallax-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/js/libs/sticky.min.js?ver=1.4.0' id='riode-sticky-lib-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/jquery.magnific-popup/jquery.magnific-popup.min.js?ver=1.1.0' id='jquery-magnific-popup-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.4.4' id='elementor-webpack-runtime-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.4.4' id='elementor-frontend-modules-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.4.4' id='share-link-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+    <script id='elementor-frontend-js-before'>
+        var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 992, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 991, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.4.4", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_import_export": true, "landing-pages": true, "elements-color-picker": true, "admin-top-bar": true }, "urls": { "assets": "https:\/\/d-themes.com\/wordpress\/riode\/demo-6\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "editorPreferences": [] }, "kit": { "viewport_mobile": 767, "viewport_tablet": 991, "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 0, "title": "Demo 6 &#8211; Riode WordPress Demo Site", "excerpt": "<p>This is where you can add new products to your store.<\/p>\n" } };
+    </script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.4.4' id='elementor-frontend-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/owl-carousel/owl.carousel.min.js?ver=2.3.4' id='owl-carousel-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/jquery.countdown/jquery.countdown.min.js?ver=5.8.2' id='jquery-countdown-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/vendor/jquery.autocomplete/jquery.autocomplete.min.js?ver=5.8.2' id='jquery-autocomplete-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/inc/add-on/live-search/live-search.min.js?ver=1.4.0' id='riode-live-search-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1-wc.5.7.1' id='jquery-cookie-js'></script>
+    <script src='https://d-themes.com/wordpress/riode/demo-6/wp-content/themes/riode/assets/js/theme-async.min.js?ver=1.4.0' id='riode-theme-async-js'></script>
+</body>
+</html>
+
+<!-- Dynamic page generated in 0.938 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-12-16 19:17:00 -->
+<!-- super cache -->
